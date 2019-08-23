@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <a href="#" @click="setLocale('es')">Es</a>
+    <a href="#" @click="setLocale('en')">En</a>
+    {{ $t('welcome') }}
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -89,6 +92,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods: {
+    setLocale (locale) {
+      this.$i18n.locale = locale
     }
   }
 }
