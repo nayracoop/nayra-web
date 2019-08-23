@@ -8,13 +8,12 @@ export default {
 }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  $img-path: '~/src/assets/img/';
+  $backgrounds-path: '~/src/assets/img/bg/';
+  $font-path: '~/src/assets/fonts/';
+
+  @import 'node_modules/bootstrap/scss/bootstrap';
+  @import 'node_modules/bootstrap-vue/src/index.scss';
+  @import 'assets/scss/main';
 </style>

@@ -1,14 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <a href="#" @click="setLocale('es')">Es</a>
-    <a href="#" @click="setLocale('en')">En</a>
-    <p>{{ $t('welcome') }}</p>
-    <p>
-      <i18n path="var">
-        <b place="variable">gatitos ({{ $t('welcome') }})</b>
-      </i18n>
-    </p>
+    <b-container>
+      <b-row>
+        <b-col md="3">
+          <a href="#" @click="setLocale('es')">Es</a>
+          <a href="#" @click="setLocale('en')">En</a>
+        </b-col>
+        <b-col md="9">
+          <p>{{ $t('welcome') }}</p>
+          <p>
+            <i18n path="var">
+              <b place="variable">gatitos ({{ $t('welcome') }})</b>
+            </i18n>
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
     <h2>Essential Links</h2>
     <ul>
       <li>
