@@ -3,7 +3,12 @@
     <h1>{{ msg }}</h1>
     <a href="#" @click="setLocale('es')">Es</a>
     <a href="#" @click="setLocale('en')">En</a>
-    {{ $t('welcome') }}
+    <p>{{ $t('welcome') }}</p>
+    <p>
+      <i18n path="var">
+        <b place="variable">gatitos ({{ $t('welcome') }})</b>
+      </i18n>
+    </p>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -96,7 +101,10 @@ export default {
   },
   methods: {
     setLocale (locale) {
-      this.$i18n.locale = locale
+      import(`../lang/${locale}.json`).then(msgs => {
+        this.$i18n.setLocaleMessage(locale, msgs)
+        this.$i18n.locale = locale
+      })
     }
   }
 }
