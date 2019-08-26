@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="wrapper">
     <app-header/>
     <app-cover/>
     <app-footer/>
