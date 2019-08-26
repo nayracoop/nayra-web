@@ -1,4 +1,4 @@
-import HelloWorld from '@/components/HelloWorld'
+import Main from '@/views/Main'
 
 // Containers
 // import DefaultContainer from './containers/DefaultContainer'
@@ -13,8 +13,8 @@ import HelloWorld from '@/components/HelloWorld'
 export const routes = [
   {
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld
+    name: 'Main',
+    component: Main
   }
   // {
   //   path: '',

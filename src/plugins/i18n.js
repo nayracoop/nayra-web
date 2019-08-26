@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
-import es from '../lang/es.json'
+import es from '../translations/es.json'
 
 Vue.use(VueI18n)
 
