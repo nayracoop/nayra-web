@@ -5,11 +5,18 @@ import VueRouter from 'vue-router'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { i18n } from './plugins/i18n'
 import { routes } from './routes'
 
+library.add([faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faCheckSquare])
+
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 const router = new VueRouter({
