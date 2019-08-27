@@ -1,8 +1,8 @@
 <template>
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+  <footer>
+    <b-container>
+      <b-row>
+        <b-col cols="12">
           <h2 class="sr-only">Seguinos en:</h2>
           <ul class="social-networks">
             <li><a target="_blank" href="https://www.facebook.com/nayracoop/" title="Facebook"><font-awesome-icon :icon="['fab', 'facebook-square']" /><span class="sr-only">Facebook</span></a></li>
@@ -14,9 +14,9 @@
           <p>Cooperativa de trabajo Crear Arte y Tecnología LTDA. <br />CUIT: 30-71460053-9</p>
           <img class="data" src="../assets/img/dataweb.jpg" alt="Data Fiscal" />
           <p><span>Somos parte de</span> <abbr title="Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"></abbr><a href="http://www.facttic.org.ar/"><img src="../assets/img/facttic.png" alt="FACTTIC" width="150" height="63" /></a></p>
-        </div>
-      </div>
-    </div>
+        </b-col>
+      </b-row>
+    </b-container>
   </footer>
 </template>
 

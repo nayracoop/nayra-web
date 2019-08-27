@@ -1,46 +1,47 @@
 <template>
-    <section class="container-fluid contact" id="contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+    <section class="contact" id="contacto">
+        <b-container>
+            <b-row>
+                <b-col cols="12">
                     <h2>Contactanos</h2>
                     <p>¿Algún proyecto en mente? <br />Estamos preparados para ayudarte a realizarlo.</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                </b-col>
+                <b-col cols="12" sm="12" md="12" lg="8" xl="8">
                     <form action="send.php" method="post" data-messages="#messages">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <b-row>
+                            <b-col cols="12" sm="12" md="6" lg="6" xl="6">
                                 <label class="sr-only" for="name">Nombre</label>
                                 <input required type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" name="name" id="name" placeholder="Tu nombre *">
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                            </b-col>
+                            <b-col cols="12" sm="12" md="6" lg="6" xl="6">
                                 <label class="sr-only" for="surname">Apellido</label>
                                 <input required type="text" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="surname" id="surname" placeholder="Tu apellido *">
-                            </div>
-                            <div class="col-12">
+                            </b-col>
+                            <b-col cols="12">
                                 <label class="sr-only" for="email">E-mail</label>
                                 <input required type="email" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="email" id="email" placeholder="Tu e-mail *">
-                            </div>
-                            <div class="col-12">
+                            </b-col>
+                            <b-col cols="12">
                                 <label class="sr-only" for="message">Mensaje</label>
                                 <textarea required class="form-control form-control-lg" name="message" id="message" rows="8" cols="80" placeholder="Mensaje *"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                            </b-col>
+                        </b-row>
+                        <b-button type="submit" class="btn btn-primary btn-lg">Enviar</b-button>
                         <span id="messages"></span>
                     </form>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                </b-col>
+                <b-col cols="12" sm="12" md="12" lg="4" xl="4">
+                    <b-row>
+                        <b-col cols="12" sm="12" md="6" lg="12" xl="12">
                             <div class="qr">
                                 <div>
-                                    <button type="button"><font-awesome-icon icon="address-card" /><span class="sr-only">Ver tarjeta de contacto</span></button>
+                                    <b-button><font-awesome-icon icon="address-card" /><span class="sr-only">Ver tarjeta de contacto</span>
+                                    </b-button>
                                 </div>
                                 <p>Descubrí el código QR y agendanos en tu teléfono.</p>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                        </b-col>
+                        <b-col cols="12" sm="12" md="6" lg="12" xl="12">
                             <div class="vcard">
                                 <dl>
                                     <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">Teléfono</span></dt>
@@ -54,11 +55,11 @@
                                 </dl>
                                 <p class="org sr-only">Cooperativa de trabajo Crear Arte y Tenología LTDA</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        </b-col>
+                    </b-row>
+                </b-col>
+            </b-row>
+        </b-container>
         <div id="map"></div>
     </section>
 </template>
