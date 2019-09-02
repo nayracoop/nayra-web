@@ -1,5 +1,5 @@
 <template>
-  <article class="web">
+  <article>
     <div id="gallery-0" data-ride="carousel" class="carousel fade-carousel slide">
       <div v-for="(img, index) in gallery" v-bind:key="index" class="carousel-inner">
         <a :data-fancybox="encodeURI(title)"

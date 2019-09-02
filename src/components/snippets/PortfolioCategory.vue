@@ -1,18 +1,10 @@
 <template>
-  <!-- <div>
-    <input type="checkbox" :id="encodeURI(name)" :name="encodeURI(name)" class="sr-only" :value="encodeURI(name)" />
-          <label :for="encodeURI(name)" class="btn btn-secondary">
-            <font-awesome-icon :icon="['far', 'square']" />
-            <font-awesome-icon :icon="['far', 'check-square']" />
-            {{ name }}
-          </label>
-  </div> -->
   <label>
-    <input type="checkbox" class="sr-only" />
-    <b-button variant="secondary">
-      <font-awesome-icon :icon="['far', 'square']" />
-      <font-awesome-icon :icon="['far', 'check-square']" />
-      {{ name }}
+    <input type="checkbox" class="sr-only" :checked="value" @change="$emit('input', $event.target.checked)" />
+    <b-button variant="secondary" tag="div">
+      <font-awesome-icon v-if="!value" :icon="['far', 'square']" />
+      <font-awesome-icon v-else :icon="['far', 'check-square']" />
+      {{ capitalizedName }}
     </b-button>
   </label>
 </template>
@@ -20,14 +12,19 @@
 <script>
 export default {
   props: {
-    name: String
+    name: String,
+    value: true
   },
   data () {
     return { }
+  },
+  computed: {
+    capitalizedName () {
+      return this.name.charAt(0).toUpperCase() + this.name.substr(1).toLowerCase()
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-
 </style>
