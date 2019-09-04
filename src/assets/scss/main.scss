@@ -7,10 +7,7 @@ $color-blue: #209bcf;
 $color-indigo: #6056a5;
 $color-purple: #ad3293;
 
-html,
-body {
-    height: 100%;
-}
+html, body { height: 100%; }
 
 body {
     font: 300 100%/1.25 'Roboto' Arial, Helvetica, sans-serif;
@@ -21,56 +18,28 @@ body {
 
 #wrapper {
     height: 100%;
-    /* width: 100%;
-  position: absolute;
-  border: 8px solid #fff;
-  box-shadow: -15px 0 16px -10px rgba(0,0,0,.75) inset;
-  overflow: auto; */
+
+    &::after {
+        content: "";
+        box-sizing: border-box;
+        display: block;
+        position: fixed;
+        border: 13px solid #fff;
+        pointer-events: none;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 15;
+    }
 }
-
-#wrapper::after {
-    content: "";
-    box-sizing: border-box;
-    display: block;
-    position: fixed;
-    border: 13px solid #fff;
-    /* box-shadow: 0 0 20px rgba(0,0,0,.25) inset; */
-    pointer-events: none;
-    /* animation: coop 15s linear infinite; */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 15;
-}
-
-
-/* .logo {
-	font-family: 'Barrio', sans-serif;
-	font-weight: normal;
-	line-height: 1;
-	font-size:1.25em;
-	margin: 0;
-}
-
-.logo b {
-	font-size: 2.125em;
-	display: block;
-	letter-spacing: 0.125em;
-  font-weight: normal;
-} */
 
 .logo {
     width: 140px;
     margin: 0;
-}
 
-.logo a {
-    padding: initial;
-}
-
-.logo svg {
-    display: block;
+    a { padding: initial; }
+    svg { display: block; }
 }
 
 h1.logo {
@@ -85,8 +54,6 @@ header {
     margin: 0 0 3em;
     padding-top: 1.5em;
     padding-bottom: 1em;
-    /* border-bottom:1px solid #222;
-  background-color: rgba(0,0,0,.9);*/
     position: fixed;
     top: 0;
     left: 0;
@@ -95,90 +62,64 @@ header {
     background-color: #fff;
     transition: background 1s ease-in-out;
     max-height: 77px;
+
+    h1 { float: left; }
+
+    p {
+        margin: 0;
+        font-size: 0.875em;
+    }
+    
+    .navbar {
+        padding: 0;
+    }
 }
 
 .scrolled header {
     background-color: #fff;
 }
 
-
-/* #wrapper header > div {
-    padding-left: 45px;
-    padding-right: 45px;
-} */
-
-header h1 {
-    float: left;
-}
-
-header p {
-    margin: 0;
-    font-size: 0.875em;
-}
-
 nav {
     float: right;
-    /* margin-top:-1.375em; */
-}
 
-header .navbar {
-    padding: 0;
-}
+    ul { margin: 0 -10px; }
+
+    li {
+        display: inline-block;
+        margin: 0 10px;
+
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            /* text-transform: uppercase; */
+            font-size: 0.875em;
+            color: #222 !important;
+            transition: all 200ms ease-in-out;
+
+            &:focus { background-color: #fafafa; }
+            &:active { background-color: #ccc; }
+        }
+
+        &.active {
+            a {
+                background-color: $color-orange;
+                color: #fff !important;
+            }
+            &:nth-last-child(2) a { background-color: $color-indigo; }
+            &:nth-last-child(3) a { background-color: $color-blue; }
+            &:nth-last-child(4) a { background-color: $color-purple; }
+        }
+    }
+
+    #navbar-toggler,
+    #navbar-toggler::-moz-focus-inner {
+        border: 0;
+        outline: none!important;
+    }
+} 
 
 .navbar-light .navbar-toggler+label {
     display: none;
-}
-
-nav ul {
-    margin: 0 -10px;
-}
-
-nav li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-nav li a {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    /* text-transform: uppercase; */
-    font-size: 0.875em;
-    color: #222 !important;
-    transition: all 200ms ease-in-out;
-}
-
-nav a:focus {
-    background-color: #fafafa;
-}
-
-nav a:active {
-    background-color: #ccc;
-}
-
-nav .active a {
-    background-color: $color-orange;
-    color: #fff !important;
-}
-
-
-/*nav .active:nth-last-child(2) a { background-color: $color-green; }*/
-
-nav .active:nth-last-child(2) a {
-    background-color: $color-indigo;
-}
-
-nav .active:nth-last-child(3) a {
-    background-color: $color-blue;
-}
-
-nav .active:nth-last-child(4) a {
-    background-color: $color-purple;
-}
-
-nav #navbar-toggler,
-nav #navbar-toggler::-moz-focus-inner {
-    border: 0;
-    outline: none!important;
 }
 
 .close-nav-btn {
@@ -186,12 +127,12 @@ nav #navbar-toggler::-moz-focus-inner {
     top: 1px;
     left: 1px;
     z-index: 25;
-}
 
-.close-nav-btn svg {
-    color: white;
-    width: 15px;
-    height: 15px;
+    svg {
+        color: white;
+        width: 15px;
+        height: 15px;
+    }
 }
 
 a.to-top {
@@ -230,87 +171,66 @@ section {
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
-    /* background: #fff url(https://drscdn.500px.org/photo/187288195/q%3D80_m%3D2000/v2?webp=true&sig=dda72396563869734e2010e65a881f4ac67999b9047d2374345c8105cac85d27) no-repeat center top;
-  background: #fff url(https://drscdn.500px.org/photo/190018805/q%3D80_m%3D2000/v2?webp=true&sig=20971027a143905022301a64830467dd24f17318cfda4be0b3463ed13c11df5b) no-repeat center bottom;
-  background: #d41c34 url(https://drscdn.500px.org/photo/176081567/q%3D80_m%3D2000/v2?webp=true&sig=868e2067f4860bb8d2804d86942aa1323e60bc45725d117593a568a1b1033a9c) no-repeat center center; */
-    /* background: #d41c34 url(https://drscdn.500px.org/photo/162738831/q%3D80_m%3D2000/v2?webp=true&sig=fc821f14dab3dab4e1fa85145f7951fd34c0d94c3b0f31ac86f505c14d0109a6) no-repeat center bottom;
-  background: #222 url(http://www.victoriasadler.com/wp-content/uploads/2014/05/Martin-Ron-mural-in-Caseros-Buenos-Aires-3-1280x856.jpg) no-repeat center bottom;
-  background: #333 url(https://cfye.com/content/uploads/2015/07/11754784_868275799919227_6007746851873931410_o.jpg) no-repeat center bottom;
-  background: #666 url(http://cdn.coda-craven.org/wp-content/uploads/2016/10/graffiti-illusion-wallpaper-coda-craven-1920x1136.jpg) no-repeat center top;
-  background: #666 url(https://mir-s3-cdn-cf.behance.net/project_modules/max_3840/7aacdf28072827.566056a5346bae1c.jpg) no-repeat center bottom; */
     background: #666 url($img-path + 'ron.jpg') no-repeat center center;
-    /* background: #999 url(../ofi.jpg) no-repeat center center; */
-    /* background-color: #d41c34; */
     background-size: cover;
     background-blend-mode: multiply;
-    /* transform: translate3d(0,0,0); */
-    /* filter: grayscale(60%); */
     overflow: hidden;
+
+    .text-wrapper {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        margin-bottom: -1em;
+        margin-left: 25px;
+        line-height: 1.125;
+        transition: margin-bottom 400ms ease-in-out;
+        z-index: 2;
+    }
+
+    p {
+        color: #fff;
+        text-shadow: 0 2px 4px #222;
+
+        &:first-child {
+            font-size: 2.25em;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+        }
+
+        &:nth-child(2) {
+            font-size: 1em;
+            margin-top: 0;
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+        }
+
+        .anim {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            margin-left: -15px;
+            margin-top: -15px;
+            z-index: 2;
+        }
+    }
 }
 
 .team {
     height: 100%;
     background: #999 url($img-path + 'ofi.jpg') no-repeat center center;
-    /* background-color: $color-blue; */
     background-size: cover;
     background-blend-mode: multiply;
-    /* animation: coop 10s linear infinite reverse; */
-    /* transform: translate3d(0,0,0); */
-    /* filter: grayscale(60%); */
     color: #fff;
 }
 
-.impact .text-wrapper {
-    position: absolute;
-    bottom: 50%;
-    left: 50%;
-    /* margin-bottom: 40px; */
-    margin-bottom: -1em;
-    margin-left: 25px;
-    line-height: 1.125;
-    /* max-width: 40%; */
-    transition: margin-bottom 400ms ease-in-out;
-    z-index: 2;
-    /* animation: blink 15ms linear alternate infinite; */
-}
-
-.impact p {
-    color: #fff;
-    text-shadow: 0 2px 4px #222;
-}
-
-.impact p:first-child {
-    font-size: 2.25em;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    /* text-transform: uppercase; */
-}
-
-.impact p:nth-child(2) {
-    font-size: 1em;
-    margin-top: 0;
-    opacity: 0;
-    transition: opacity 300ms ease-in-out;
-}
-
-.impact .anim {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    margin-left: -15px;
-    margin-top: -15px;
-    z-index: 2;
-    /* animation: spin 5s ease-in-out infinite alternate; */
-}
-
-.anim:hover+.text-wrapper {
+.anim:hover + .text-wrapper {
     margin-bottom: 0.5em;
 }
 
-.anim:hover+.text-wrapper p:nth-child(2) {
+.anim:hover + .text-wrapper p:nth-child(2) {
     opacity: 1;
     animation: appears 30ms ease-out alternate;
     animation-iteration-count: 7;
@@ -318,23 +238,9 @@ section {
     transition-delay: 300ms;
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes appears {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+/* Animations */
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes appears { 0% { opacity: 0; } 100% { opacity: 1; } }
 
 .impact .anim::after,
 .impact .anim::before {
@@ -349,31 +255,12 @@ section {
     top: 50%;
     margin-left: -3px;
     margin-top: -12px;
-    /* border:2px solid #fff;
-  background-color: rgba(0,0,0,.1); */
     background-color: $color-orange;
-    /* background-color: $color-red;
-  background-color: $color-purple;
-  background-color: $color-indigo;
-  background-color: $color-blue;
-  background-color: $color-green; */
     border-radius: 6px;
 }
 
 .impact .anim::before {
-    /* animation-delay: -1.5s; */
     animation-delay: -2.5s;
-    /* animation-duration: 3s; */
-    /* animation-direction: reverse; */
-    /* animation-direction: normal; */
-    /* border-width: 1px;
-  width:20px;
-  height: 20px;
-  margin-left: -10px;
-  margin-top: -10px;
-  background-color: rgba(0,0,0,.25);
-  display: none; */
-    /* left: 49.5%; */
 }
 
 @keyframes digital {
