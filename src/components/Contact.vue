@@ -7,7 +7,7 @@
                     <p>¿Algún proyecto en mente? <br />Estamos preparados para ayudarte a realizarlo.</p>
                 </b-col>
                 <b-col cols="12" sm="12" md="12" lg="8" xl="8">
-                    <form action="send.php" method="post" data-messages="#messages">
+                    <b-form action="send.php" method="post" data-messages="#messages">
                         <b-row>
                             <b-col cols="12" sm="12" md="6" lg="6" xl="6">
                                 <label class="sr-only" for="name">Nombre</label>
@@ -28,7 +28,7 @@
                         </b-row>
                         <b-button type="submit" class="btn btn-primary btn-lg">Enviar</b-button>
                         <span id="messages"></span>
-                    </form>
+                    </b-form>
                 </b-col>
                 <b-col cols="12" sm="12" md="12" lg="4" xl="4">
                     <b-row>
@@ -60,12 +60,17 @@
                 </b-col>
             </b-row>
         </b-container>
-        <div id="map"></div>
+        <Map class="map" style="height: 400px;"/>
     </section>
 </template>
 
 <script>
+import Map from '../components/snippets/Map'
+
 export default {
+  components: {
+    Map
+  },
   data () {
     return {
     }
