@@ -3,10 +3,10 @@
     <b-container>
       <b-row id="info-nosotros">
         <b-col cols="12" sm="12" md="12" lg="9" xl="7" class="content">
-          <h2>Acerca de nosotros</h2>
-          <p>Somos un equipo de programadores y artistas constituido como cooperativa de trabajo, dedicado al desarrollo de sistemas interactivos de calidad, confiables y dinámicos.</p>
-          <p>El trabajo colaborativo y una forma de organización horizontal y democrática potencian los procesos creativos y profesionales, permitiéndonos obtener resultados excelentes en cada proyecto.</p>
-          <p>Buscamos perfilarnos como actores culturales en el campo digital y contribuir con nuestro trabajo y experiencia al desarrollo de nuestra comunidad.</p>
+          <h2>{{ $t('acerca.titulo') }}</h2>
+          <p>{{ $t('acerca.parrafo1') }}</p>
+          <p>{{ $t('acerca.parrafo2') }}</p>
+          <p>{{ $t('acerca.parrafo3') }}</p>
         </b-col>
         <div class="doodle">
           <div class="tile color-1" style="animation-delay: -4.89214s; animation-duration: 11.4012s; left: -20%; transform: scale(0.25);">

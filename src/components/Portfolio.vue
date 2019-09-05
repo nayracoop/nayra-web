@@ -1,8 +1,8 @@
 <template>
   <section id="trabajos" class="container-fluid works">
     <div class="container">
-      <h2>Nuestro trabajo</h2>
-      <p>Desarrollos web, web apps, juegos, desarrollos a medida, capacitaciones, e-commerce, animaciones, asesoramiento, proyectos propios, exposiciones, talleres.</p>
+      <h2>{{ $t('portfolio.titulo') }}</h2>
+      <p>{{ $t('portfolio.bajada') }}</p>
       <ul class="tags-list">
         <li v-for="(value, category, index) in categories" v-bind:key="index">
           <app-portfolio-category :name="category" v-model="categories[category]" />

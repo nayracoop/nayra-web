@@ -22,15 +22,15 @@
             </h1>
           </b-navbar-brand>
           <b-navbar-toggle id="navbar-toggler" target="main-menu"></b-navbar-toggle>
-          <label for="navbar-toggler">Abrir menú</label>
+          <label for="navbar-toggler">{{ $t('header.toggleLabel') }}</label>
             <b-collapse is-nav id="main-menu">
               <b-navbar-nav class="ml-auto">
-                <b-nav-item href="#nosotros">Nosotros</b-nav-item>
-                <b-nav-item href="#trabajos">Trabajos</b-nav-item>
-                <b-nav-item href="#contacto">Contacto</b-nav-item>
+                <b-nav-item href="#nosotros">{{ $t('header.nosotros') }}</b-nav-item>
+                <b-nav-item href="#trabajos">{{ $t('header.trabajos') }}</b-nav-item>
+                <b-nav-item href="#contacto">{{ $t('header.contacto') }}</b-nav-item>
                 <b-nav-item-dropdown text="Lang" right>
-                  <b-dropdown-item href="#">EN</b-dropdown-item>
-                  <b-dropdown-item href="#">ES</b-dropdown-item>
+                  <b-dropdown-item href="#" @click.prevent="setLocale('en')">EN</b-dropdown-item>
+                  <b-dropdown-item href="#" @click.prevent="setLocale('es')">ES</b-dropdown-item>
                 </b-nav-item-dropdown>
               </b-navbar-nav>
             </b-collapse>
