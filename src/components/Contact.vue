@@ -1,51 +1,52 @@
 <template>
-    <section class="container-fluid contact" id="contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <h2>Contactanos</h2>
-                    <p>¿Algún proyecto en mente? <br />Estamos preparados para ayudarte a realizarlo.</p>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
-                    <form action="send.php" method="post" data-messages="#messages">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label class="sr-only" for="name">Nombre</label>
-                                <input required type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" name="name" id="name" placeholder="Tu nombre *">
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                                <label class="sr-only" for="surname">Apellido</label>
-                                <input required type="text" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="surname" id="surname" placeholder="Tu apellido *">
-                            </div>
-                            <div class="col-12">
+    <section class="contact" id="contacto">
+        <b-container>
+            <b-row>
+                <b-col cols="12">
+                    <h2>{{ $t('contacto.titulo') }}</h2>
+                    <p v-html="$t('contacto.bajada')"></p>
+                </b-col>
+                <b-col cols="12" sm="12" md="12" lg="8" xl="8">
+                    <b-form action="send.php" method="post" data-messages="#messages">
+                        <b-row>
+                            <b-col cols="12" sm="12" md="6" lg="6" xl="6">
+                                <label class="sr-only" for="name">{{ $t('contacto.labelNombre') }}</label>
+                                <input required type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" name="name" id="name" :placeholder="$t('contacto.placeholderNombre')">
+                            </b-col>
+                            <b-col cols="12" sm="12" md="6" lg="6" xl="6">
+                                <label class="sr-only" for="surname">{{ $t('contacto.labelApellido') }}</label>
+                                <input required type="text" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="surname" id="surname" :placeholder="$t('contacto.placeholderApellido')">
+                            </b-col>
+                            <b-col cols="12">
                                 <label class="sr-only" for="email">E-mail</label>
-                                <input required type="email" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="email" id="email" placeholder="Tu e-mail *">
-                            </div>
-                            <div class="col-12">
-                                <label class="sr-only" for="message">Mensaje</label>
-                                <textarea required class="form-control form-control-lg" name="message" id="message" rows="8" cols="80" placeholder="Mensaje *"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                <input required type="email" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="email" id="email" :placeholder="$t('contacto.placeholderEmail')">
+                            </b-col>
+                            <b-col cols="12">
+                                <label class="sr-only" for="message">{{ $t('contacto.labelMensaje') }}</label>
+                                <textarea required class="form-control form-control-lg" name="message" id="message" rows="8" cols="80" :placeholder="$t('contacto.placeholderMensaje')"></textarea>
+                            </b-col>
+                        </b-row>
+                        <b-button type="submit" class="btn btn-primary btn-lg">{{ $t('contacto.btnSubmit') }}</b-button>
                         <span id="messages"></span>
-                    </form>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                    </b-form>
+                </b-col>
+                <b-col cols="12" sm="12" md="12" lg="4" xl="4">
+                    <b-row>
+                        <b-col cols="12" sm="12" md="6" lg="12" xl="12">
                             <div class="qr">
                                 <div>
-                                    <button type="button"><font-awesome-icon icon="address-card" /><span class="sr-only">Ver tarjeta de contacto</span></button>
+                                    <b-button><font-awesome-icon icon="address-card" /><span class="sr-only">{{ $t('contacto.srTarjetaContacto') }}</span>
+                                    </b-button>
                                 </div>
-                                <p>Descubrí el código QR y agendanos en tu teléfono.</p>
+                                <p>{{ $t('contacto.bajadaQR') }}</p>
                             </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">
+                        </b-col>
+                        <b-col cols="12" sm="12" md="6" lg="12" xl="12">
                             <div class="vcard">
                                 <dl>
-                                    <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">Teléfono</span></dt>
+                                    <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">{{ $t('srTelefono') }}</span></dt>
                                     <dd class="tel">+54 9 11 5347 6740</dd>
-                                    <dt><font-awesome-icon icon="map-marker-alt" /><span class="sr-only">Dirección</span></dt>
+                                    <dt><font-awesome-icon icon="map-marker-alt" /><span class="sr-only">{{ $t('srDireccion') }}</span></dt>
                                     <dd class="adr"><span class="street-address">Wenceslao de Tata 4561 2C</span>, <span class="locality">Caseros</span><span class="sr-only"> (<abbr title="Código postal">CP</abbr>:<span class="postal-code">B1678CSB</span>)</span>, <span class="region">Buenos Aires</span>, <span class="country-name">Argentina</span>.</dd>
                                     <dt><i class="fas fa-envelope"></i><font-awesome-icon icon="envelope" /><span class="sr-only">Email</span></dt>
                                     <dd><a class="email" href="mailto:info@nayra.coop">info@nayra.coop</a></dd>
@@ -54,17 +55,22 @@
                                 </dl>
                                 <p class="org sr-only">Cooperativa de trabajo Crear Arte y Tenología LTDA</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="map"></div>
+                        </b-col>
+                    </b-row>
+                </b-col>
+            </b-row>
+        </b-container>
+        <Map class="map" style="height: 400px;"/>
     </section>
 </template>
 
 <script>
+import Map from '../components/snippets/Map'
+
 export default {
+  components: {
+    Map
+  },
   data () {
     return {
     }

@@ -1,4 +1,43 @@
 {
-  "welcome": "Bienvenide",
-  "var": "Esto es un ejemplo con {variable}"
+  "header": {
+    "nosotros": "Nosotros",
+    "trabajos": "Trabajos",
+    "contacto": "Contacto",
+    "toggleLabel": "Abrir menú"
+  },
+  "cover": {
+    "bajada": "<strong><b>Cooperativa</b> de desarrollo digital</strong>"
+  },
+  "acerca": {
+    "titulo": "Acerca de nosotros",
+    "parrafo1": "Somos un equipo de programadores y artistas constituido como cooperativa de trabajo, dedicado al desarrollo de sistemas interactivos de calidad, confiables y dinámicos.",
+    "parrafo2": "El trabajo colaborativo y una forma de organización horizontal y democrática potencian los procesos creativos y profesionales, permitiéndonos obtener resultados excelentes en cada proyecto.",
+    "parrafo3": "Buscamos perfilarnos como actores culturales en el campo digital y contribuir con nuestro trabajo y experiencia al desarrollo de nuestra comunidad."
+  },
+  "portfolio": {
+    "titulo": "Nuestro trabajo",
+    "bajada": "Desarrollos web, web apps, juegos, desarrollos a medida, capacitaciones, e-commerce, animaciones, asesoramiento, proyectos propios, exposiciones, talleres."
+  },
+  "contacto": {
+    "titulo": "Contactanos",
+    "bajada": "¿Algún proyecto en mente? <br /> Estamos preparados para ayudarte a realizarlo.",
+    "bajadaQR": "Descubrí el código QR y agendanos en tu teléfono.",
+    "srTarjetaContacto": "Ver tarjeta de contacto",
+    "labelNombre": "Nombre",
+    "placeholderNombre": "Tu nombre *",
+    "labelApellido": "Apellido",
+    "placeholderApellido": "Tu apellido *",
+    "labelMensaje": "Mensaje",
+    "placeholderMensaje": "Tu mensaje *",
+    "placeholderEmail": "Tu email *",
+    "labelTelefono": "Teléfono",
+    "placeholderTelefono": "Tu teléfono *",
+    "btnSubmit": "Enviar"
+  },
+  "footer": {
+    "bajadaFACTTIC": "Somos parte de"
+  },
+  "srTelefono": "Teléfono",
+  "srDireccion": "Dirección",
+  "srSocialMedia": "Seguinos en:"
 }

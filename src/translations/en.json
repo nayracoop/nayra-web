@@ -1,4 +1,43 @@
 {
-  "welcome": "Welcome",
-  "var": "This is an example with {variable}"
+  "header": {
+    "nosotros": "Our team",
+    "trabajos": "Works",
+    "contacto": "Contact",
+    "toggleLabel": "Open menu"
+  },
+  "cover": {
+    "bajada": "<strong><b>Cooperative </b> of digital development</strong>"
+  },
+  "acerca": {
+    "titulo": "About us",
+    "parrafo1": "We are a team of programmers and artists established as a work cooperative, dedicated to the development of quality, reliable and dynamic interactive systems.",
+    "parrafo2": "Collaborative work and a form of horizontal and democratic organization enhance creative and professional processes, allowing us to obtain excellent results in each project.",
+    "parrafo3": "We seek to profile ourselves as cultural actors in the digital field and contribute with our work and experience to the development of our community."
+  },
+  "portfolio": {
+    "titulo": "Our work",
+    "bajada": "Web developments, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
+  },
+  "contacto": {
+    "titulo": "Get in touch",
+    "bajada": "Any project in mind?  <br /> Any project in mind? We are prepared to help you do it.",
+    "bajadaQR": "Discover the QR code and schedule us on your phone.",
+    "srTarjetaContacto": "See contact card",
+    "labelNombre": "Name",
+    "placeholderNombre": "Your name *",
+    "labelApellido": "Surname",
+    "placeholderApellido": "Your surname *",
+    "labelMensaje": "Message",
+    "placeholderMensaje": "Your message *",
+    "placeholderEmail": "Your email *",
+    "labelTelefono": "Phone",
+    "placeholderTelefono": "Your phone *",
+    "btnSubmit": "Send"
+  },
+  "footer": {
+    "bajadaFACTTIC": "We are part of"
+  },
+  "srTelefono": "Phone",
+  "srDireccion": "Address",
+  "srSocialMedia": "Follow us"
 }
