@@ -21,6 +21,7 @@ export default {
     }
   },
   mounted () {
+    // eslint-disable-next-line
     new this.google.maps.Marker({
       position: this.marker.position,
       marker: this.marker,

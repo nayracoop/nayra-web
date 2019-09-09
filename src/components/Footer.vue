@@ -12,8 +12,8 @@
             <li><a target="_blank" href="https://www.linkedin.com/company/nayra" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin']" /><span class="sr-only">Linkedin</span></a></li>
           </ul>
           <p>Cooperativa de trabajo Crear Arte y Tecnología LTDA. <br />CUIT: 30-71460053-9</p>
-          <img class="data" src="../assets/img/dataweb.jpg" alt="Data Fiscal" />
-          <p><span>{{ $t('footer.bajadaFACTTIC')}}</span> <abbr title="Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"></abbr><a href="http://www.facttic.org.ar/"><img src="../assets/img/facttic.png" alt="FACTTIC" width="150" height="63" /></a></p>
+          <img class="data" :src="require('@/assets/img/dataweb.jpg')" alt="Data Fiscal" />
+          <p><span>{{ $t('footer.bajadaFACTTIC')}}</span> <abbr title="Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"></abbr><a href="http://www.facttic.org.ar/"><img :src="require('@/assets/img/facttic.png')" alt="FACTTIC" width="150" height="63" /></a></p>
         </b-col>
       </b-row>
     </b-container>
