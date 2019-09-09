@@ -4,7 +4,7 @@
     <b-button variant="secondary" tag="div">
       <font-awesome-icon v-if="!value" :icon="['far', 'square']" />
       <font-awesome-icon v-else :icon="['far', 'check-square']" />
-      {{ capitalizedName }}
+      {{ $t(capitalizedName) }}
     </b-button>
   </label>
 </template>

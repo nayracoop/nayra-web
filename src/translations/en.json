@@ -1,43 +1,45 @@
 {
-  "header": {
-    "nosotros": "Our team",
-    "trabajos": "Works",
-    "contacto": "Contact",
-    "toggleLabel": "Open menu"
-  },
   "cover": {
-    "bajada": "<strong><b>Cooperative </b> of digital development</strong>"
+    "content": "<strong><b>Cooperative</b> of digital development</strong>",
+    "phone": "+54 9 11 5347 6740"
   },
-  "acerca": {
-    "titulo": "About us",
-    "parrafo1": "We are a team of programmers and artists established as a work cooperative, dedicated to the development of quality, reliable and dynamic interactive systems.",
-    "parrafo2": "Collaborative work and a form of horizontal and democratic organization enhance creative and professional processes, allowing us to obtain excellent results in each project.",
-    "parrafo3": "We seek to profile ourselves as cultural actors in the digital field and contribute with our work and experience to the development of our community."
+  "about": {
+    "title": "About us",
+    "content": [
+      "We are a team of programmers and artists established as a work cooperative, dedicated to the development of quality, reliable and dynamic interactive systems.",
+      "Collaborative work and a form of horizontal and democratic organization enhance creative and professional processes, allowing us to obtain excellent results in each project.",
+      "We seek to profile ourselves as cultural actors in the digital field and contribute with our work and experience to the development of our community."
+    ]
   },
   "portfolio": {
-    "titulo": "Our work",
-    "bajada": "Web developments, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
+    "title": "Our work",
+    "content": "Web developments, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
   },
-  "contacto": {
-    "titulo": "Get in touch",
-    "bajada": "Any project in mind?  <br /> Any project in mind? We are prepared to help you do it.",
-    "bajadaQR": "Discover the QR code and schedule us on your phone.",
-    "srTarjetaContacto": "See contact card",
-    "labelNombre": "Name",
-    "placeholderNombre": "Your name *",
-    "labelApellido": "Surname",
-    "placeholderApellido": "Your surname *",
-    "labelMensaje": "Message",
-    "placeholderMensaje": "Your message *",
-    "placeholderEmail": "Your email *",
-    "labelTelefono": "Phone",
-    "placeholderTelefono": "Your phone *",
-    "btnSubmit": "Send"
+  "contact": {
+    "title": "Get in touch",
+    "content": [
+      "Any project in mind?",
+      "We are prepared to help you do it."
+    ],
+    "contentQR": "Discover the QR code and schedule us on your phone.",
+    "srContactCard": "See contact card"
   },
-  "footer": {
-    "bajadaFACTTIC": "We are part of"
+  "vCard": {
+    "phone": "+54 9 11 5347 6740",
+    "address": "Wenceslao de Tata 4561 2C",
+    "locality": "Caseros",
+    "region": "Province of Buenos Aires",
+    "country": "Argentina",
+    "zipCodeLabel": "CP",
+    "zipCode": "B1678CSB",
+    "urlName": "nayra.coop",
+    "emailAddress": "info@nayra.coop"
   },
-  "srTelefono": "Phone",
-  "srDireccion": "Address",
-  "srSocialMedia": "Follow us"
+  "companyShortAddress": "Caseros, Province of Buenos Aires",
+  "companyAddress": "Wenceslao de Tata 4561 2C, Caseros, Province of Buenos Aires",
+  "companyLegalName": "Cooperativa de trabajo Crear Arte y Tecnología LTDA",
+  "CUIT": "30-71460053-9",
+  "URL": "URL",
+  "urlName": "nayra.coop",
+  "FACTTIC": "Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"
 }

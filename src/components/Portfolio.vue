@@ -1,13 +1,17 @@
 <template>
-  <section id="trabajos" class="container-fluid works">
-    <div class="container">
-      <h2>{{ $t('portfolio.titulo') }}</h2>
-      <p>{{ $t('portfolio.bajada') }}</p>
-      <ul class="tags-list">
-        <li v-for="(value, category, index) in categories" v-bind:key="index">
-          <app-portfolio-category :name="category" v-model="categories[category]" />
-        </li>
-      </ul>
+  <section id="trabajos" class="works">
+    <b-container>
+      <b-row>
+        <b-col cols="12">
+          <h2>{{ $t('portfolio.title') }}</h2>
+          <p>{{ $t('portfolio.content') }}</p>
+          <ul class="tags-list">
+            <li v-for="(value, category, index) in categories" v-bind:key="index">
+              <app-portfolio-category :name="category" v-model="categories[category]" />
+            </li>
+          </ul>
+        </b-col>
+      </b-row>
       <b-row class="portfolio">
         <template v-for="(item, index) in portfolio">
           <b-col v-bind:key="index" xs="12" sm="12" md="6" lg="6" xl="4" v-if="!filtered || item.tags.reduce((current, item) => (current || categories[item]), false)">
@@ -15,7 +19,7 @@
           </b-col>
         </template>
       </b-row>
-    </div>
+    </b-container>
     <a href="#company-info" class="to-top nav-link">
       <font-awesome-icon icon="arrow-up" />
     </a>
