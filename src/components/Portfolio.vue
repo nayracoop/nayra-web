@@ -54,10 +54,6 @@ export default {
         {
           title: 'Matanza Digital',
           url: '',
-<<<<<<< HEAD
-          gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
-          tags: [ 'art' ]
-=======
           gallery: [ 'matanza-digital-1.jpg', 'matanza-digital-2.jpg' ],
           tags: [ 'arte' ]
         },
@@ -162,7 +158,6 @@ export default {
           url: '',
           gallery: [ 'desplazamientos-1.jpg', 'desplazamientos-2.jpg', 'desplazamientos-3.jpg' ],
           tags: [ 'arte' ]
->>>>>>> 8e1a54c82fbcc1125f4639169bc3b8dafc436cb1
         }
       ]
     }
