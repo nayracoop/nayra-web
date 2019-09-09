@@ -40,22 +40,129 @@ export default {
       categories: {},
       portfolio: [
         {
-          title: 'AMG 1',
+          title: 'AMG',
           url: '',
           gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
           tags: [ 'web', 'e-commerce' ]
         },
         {
-          title: 'AMG 2',
+          title: 'AMG Energía',
           url: '',
-          gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
+          gallery: [ 'amg-energia-1.jpg', 'amg-energia-2.jpg' ],
           tags: [ 'web' ]
         },
         {
-          title: 'AMG 3',
+          title: 'Matanza Digital',
           url: '',
+<<<<<<< HEAD
           gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
           tags: [ 'art' ]
+=======
+          gallery: [ 'matanza-digital-1.jpg', 'matanza-digital-2.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Andrés & Asociados',
+          url: '',
+          gallery: [ 'andres-y-asociados-1.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'El Tenedor Rosa',
+          url: '',
+          gallery: [ 'el-tenedor-rosa-1.jpg', 'el-tenedor-rosa-2.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'P2B Estudio',
+          url: '',
+          gallery: [ 'p2b-1.jpg', 'p2b-2.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Propuestas & Servicios para Casamientos',
+          url: '',
+          gallery: [ 'propuestas-1.jpg', 'propuestas-2.jpg', 'propuestas-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'A. Rinkel',
+          url: '',
+          gallery: [ 'arinkel-1.jpg', 'arinkel-2.jpg', 'arinkel-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Böron',
+          url: '',
+          gallery: [ 'boron-1.jpg', 'boron-2.jpg', 'boron-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Code of Life',
+          url: '',
+          gallery: [ 'code-of-life-1.jpg', 'code-of-life-2.jpg', 'code-of-life-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Estudio Recondo',
+          url: '',
+          gallery: [ 'recondo-1.jpg', 'recondo-2.jpg', 'recondo-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Interturis',
+          url: '',
+          gallery: [ 'interturis-1.jpg', 'interturis-2.jpg', 'interturis-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Crea tu súper Día del Niño',
+          url: '',
+          gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Equipamiento SIX',
+          url: '',
+          gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Satanizador',
+          url: '',
+          gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Transforma tu aventura',
+          url: '',
+          gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Animaciones OSDE',
+          url: '',
+          gallery: [ 'osde-1.jpg', 'osde-2.jpg', 'osde-3.jpg', 'osde-4.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Mumi',
+          url: '',
+          gallery: [ 'mumi-1.jpg', 'mumi-2.jpg', 'mumi-3.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Sun-Fi',
+          url: '',
+          gallery: [ 'sun-fi-1.jpg' ],
+          tags: [ 'arte' ]
+        },
+        {
+          title: 'Desplazamientos',
+          url: '',
+          gallery: [ 'desplazamientos-1.jpg', 'desplazamientos-2.jpg', 'desplazamientos-3.jpg' ],
+          tags: [ 'arte' ]
+>>>>>>> 8e1a54c82fbcc1125f4639169bc3b8dafc436cb1
         }
       ]
     }

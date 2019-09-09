@@ -17,6 +17,7 @@ library.add([faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faCheckSqua
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
+
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

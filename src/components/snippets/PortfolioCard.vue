@@ -1,23 +1,37 @@
 <template>
   <article>
-    <div id="gallery-0" data-ride="carousel" class="carousel fade-carousel slide">
-      <div v-for="(img, index) in gallery" v-bind:key="index" class="carousel-inner">
-        <a :data-fancybox="encodeURI(title)"
-          :href="require(`@/assets/img/portfolio/xl/${img}`)"
-          :data-fancybox-title="title"
-          :data-caption="`<span>${ title }</span><a href=&quot;${ projectURL }&quot;>${ projectURL }</a>`"
-          :class="{ active: index === 0 }"
-          class="carousel-item">
-          <img :src="require(`@/assets/img/portfolio/${img}`)" alt="AMG" class="d-block w-100" />
-        </a>
-      </div>
+    <div class="carousel"  @click="open">
+      <b-carousel :id="'gallery-' + sliderId"
+      v-model="slide"
+      :interval="4000"
+      class="fade-carousel">
+        <b-carousel-slide v-for="(img, index) in gallery" v-bind:key="index"
+          :img-src="require(`@/assets/img/portfolio/${img}`)">
+          
+          <!--a :data-fancybox="encodeURI(title)"
+            :href="require(`@/assets/img/portfolio/xl/${img}`)"
+            :data-fancybox-title="title"
+            :data-caption="`<span>${ title }</span><a href=&quot;${ projectURL }&quot;>${ projectURL }</a>`"
+            :class="{ active: index === 0 }"
+            class="carousel-item">
+            <img :src="require(`@/assets/img/portfolio/${img}`)" alt="AMG" class="d-block w-100" />
+          </a-->
+
+
+        </b-carousel-slide>
+      </b-carousel>
       <font-awesome-icon icon="search-plus" />
+      <p>
+        Slide #: {{ slide }}<br>
+        Sliding: {{ sliding }}
+      </p>
     </div>
     <a :href="projectURL" target="_blank" rel="nofollow" class="info"><h3>{{ title }}</h3></a>
   </article>
 </template>
 
 <script>
+
 export default {
   props: {
     gallery: Array,
@@ -25,7 +39,27 @@ export default {
     projectURL: String
   },
   data () {
-    return { }
+    return {
+      sliderId: Math.round((Math.random()*100)),
+      slide: 0,
+      sliding: null
+    }
+  },
+  methods: {
+    onSlideStart(slide) {
+      this.sliding = true
+    },
+    onSlideEnd(slide) {
+      this.sliding = false
+    },
+    open (e) {
+      fancyBox(e.target, this.gallery);
+    }
+  },
+  mounted () {
+    this.gallery = this.gallery.map(url => {
+      return { url }
+    })
   }
 }
 </script>
