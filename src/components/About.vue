@@ -3,10 +3,10 @@
     <b-container>
       <b-row id="info-nosotros">
         <b-col cols="12" sm="12" md="12" lg="9" xl="7" class="content">
-          <h2>{{ $t('acerca.titulo') }}</h2>
-          <p>{{ $t('acerca.parrafo1') }}</p>
-          <p>{{ $t('acerca.parrafo2') }}</p>
-          <p>{{ $t('acerca.parrafo3') }}</p>
+          <h2>{{ $t('about.title') }}</h2>
+          <p>{{ $t('about.content[0]') }}</p>
+          <p>{{ $t('about.content[1]') }}</p>
+          <p>{{ $t('about.content[2]') }}</p>
         </b-col>
         <div class="doodle">
           <div class="tile color-1" style="animation-delay: -4.89214s; animation-duration: 11.4012s; left: -20%; transform: scale(0.25);">

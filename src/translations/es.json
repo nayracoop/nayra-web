@@ -1,43 +1,67 @@
 {
-  "header": {
-    "nosotros": "Nosotros",
-    "trabajos": "Trabajos",
-    "contacto": "Contacto",
-    "toggleLabel": "Abrir menú"
-  },
   "cover": {
-    "bajada": "<strong><b>Cooperativa</b> de desarrollo digital</strong>"
+    "content": "<strong><b>Cooperativa</b> de desarrollo digital</strong>",
+    "phone": "+54 9 11 5347 6740"
   },
-  "acerca": {
-    "titulo": "Acerca de nosotros",
-    "parrafo1": "Somos un equipo de programadores y artistas constituido como cooperativa de trabajo, dedicado al desarrollo de sistemas interactivos de calidad, confiables y dinámicos.",
-    "parrafo2": "El trabajo colaborativo y una forma de organización horizontal y democrática potencian los procesos creativos y profesionales, permitiéndonos obtener resultados excelentes en cada proyecto.",
-    "parrafo3": "Buscamos perfilarnos como actores culturales en el campo digital y contribuir con nuestro trabajo y experiencia al desarrollo de nuestra comunidad."
+  "about": {
+    "title": "Acerca de nosotros",
+    "content": [
+      "Somos un equipo de programadores y artistas constituido como cooperativa de trabajo, dedicado al desarrollo de sistemas interactivos de calidad, confiables y dinámicos.",
+      "El trabajo colaborativo y una forma de organización horizontal y democrática potencian los procesos creativos y profesionales, permitiéndonos obtener resultados excelentes en cada proyecto.",
+      "Buscamos perfilarnos como actores culturales en el campo digital y contribuir con nuestro trabajo y experiencia al desarrollo de nuestra comunidad."
+    ]
   },
   "portfolio": {
-    "titulo": "Nuestro trabajo",
-    "bajada": "Desarrollos web, web apps, juegos, desarrollos a medida, capacitaciones, e-commerce, animaciones, asesoramiento, proyectos propios, exposiciones, talleres."
+    "title": "Nuestro trabajo",
+    "content": "Desarrollos web, web apps, juegos, desarrollos a medida, capacitaciones, e-commerce, animaciones, asesoramiento, proyectos propios, exposiciones, talleres."
   },
-  "contacto": {
-    "titulo": "Contactanos",
-    "bajada": "¿Algún proyecto en mente? <br /> Estamos preparados para ayudarte a realizarlo.",
-    "bajadaQR": "Descubrí el código QR y agendanos en tu teléfono.",
-    "srTarjetaContacto": "Ver tarjeta de contacto",
-    "labelNombre": "Nombre",
-    "placeholderNombre": "Tu nombre *",
-    "labelApellido": "Apellido",
-    "placeholderApellido": "Tu apellido *",
-    "labelMensaje": "Mensaje",
-    "placeholderMensaje": "Tu mensaje *",
-    "placeholderEmail": "Tu email *",
-    "labelTelefono": "Teléfono",
-    "placeholderTelefono": "Tu teléfono *",
-    "btnSubmit": "Enviar"
+  "contact": {
+    "title": "Contactanos",
+    "content": [
+      "¿Algún proyecto en mente?",
+      "Estamos preparados para ayudarte a realizarlo."
+    ],
+    "contentQR": "Descubrí el código QR y agendanos en tu teléfono.",
+    "srContactCard": "Ver tarjeta de contacto"
   },
-  "footer": {
-    "bajadaFACTTIC": "Somos parte de"
+  "vCard": {
+    "phone": "+54 9 11 5347 6740",
+    "address": "Wenceslao de Tata 4561 2C",
+    "locality": "Caseros",
+    "region": "Buenos Aires",
+    "country": "Argentina",
+    "zipCodeLabel": "CP",
+    "zipCode": "B1678CSB",
+    "urlName": "nayra.coop",
+    "emailAddress": "info@nayra.coop"
   },
-  "srTelefono": "Teléfono",
-  "srDireccion": "Dirección",
-  "srSocialMedia": "Seguinos en:"
+  "companyShortAddress": "Caseros, Provincia de Buenos Aires",
+  "companyAddress": "Wenceslao de Tata 4561 2C, Caseros, Provincia de Buenos Aires",
+  "companyLegalName": "Cooperativa de trabajo Crear Arte y Tecnología LTDA",
+  "CUIT": "30-71460053-9",
+  "Data fiscal": "Data fiscal",
+  "URL": "URL",
+  "FACTTIC": "Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento",
+  "urlName": "nayra.coop",
+  "Your name": "Tu nombre",
+  "Your surname": "Tu apellido",
+  "Your phone": "Tu teléfono",
+  "Your message": "Tu mensaje",
+  "Your email": "Tu email",
+  "Send": "Enviar",
+  "Name": "Nombre",
+  "Surname": "Apellido",
+  "Message": "Mensaje",
+  "Our team": "Nosotros",
+  "Works": "Trabajos",
+  "Contact": "Contacto",
+  "Open menu": "Abrir menú",
+  "We are part of": "Somos parte de",
+  "Follow us": "Seguinos en",
+  "Phone": "Teléfono",
+  "Email": "Email",
+  "Address": "Dirección",
+  "Art": "Arte",
+  "Others": "Otros",
+  "Media": "Medios"
 }
