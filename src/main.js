@@ -22,17 +22,13 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
-  mode: 'history'
-  // scrollBehavior(to, from, savedPosition) {
-  //   if (savedPosition) {
-  //     return savedPosition;
-  //   }
-  //   if (to.hash) {
-  //     return { selector: to.hash };
-  //   }
-  //   return {x: 0, y: 0};
-  // }
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) return savedPosition
+    if (to.hash) return { selector: to.hash }
+    return { x: 0, y: 0 }
+  }
 })
 
 /* eslint-disable no-new */
@@ -40,6 +36,5 @@ new Vue({
   el: '#app',
   router,
   i18n,
-
   render: h => h(App)
 })
