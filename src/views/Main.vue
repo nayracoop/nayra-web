@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper">
-    <app-header/>
-    <app-cover/>
+    <app-header ref="header" :highlight="currentSection"/>
+    <app-cover ref="cover"/>
     <app-about ref="about"/>
     <app-portfolio ref="works"/>
     <app-contact ref="contact"/>
@@ -29,24 +29,19 @@ export default {
   data () {
     return {
       isMobile: false,
-      isSafari: false
+      isSafari: false,
+      currentSection: ''
     }
   },
   methods: {
-    handleScroll () {
-      console.log(this.$refs)
-      // var sections = $("nav a");
-      // for(var i = sections.length-1; i >= 0; i--) {
-      //   var section = $(sections.eq(i).attr("href"));
-      //   if(section.offset().top - $(window).scrollTop() < $(window).innerHeight()/3) {
-      //     sections.parent().removeClass("active")
-      //     sections.eq(i).parent().addClass("active")
-      //     break;
-      //   }
-      // }
-
-      // if($(window).scrollTop() > 0) $('body').addClass("scrolle    console.log(document.body)d");
-      // else $('body').removeClass("scrolled");
+    handleScroll (e) {
+      let key = ''
+      const scrollY = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0) + Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.6)
+      for (const ref in this.$refs) {
+        if (scrollY > this.$refs[ref].$el.offsetTop) {
+          this.currentSection = ref
+        }
+      }
     }
   },
   created () {

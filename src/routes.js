@@ -1,36 +1,29 @@
 import Main from '@/views/Main'
-
-// Containers
-// import DefaultContainer from './containers/DefaultContainer'
-
-// Views
-// import Podcast from './views/Podcast'
-// import Cards from './views/Cards'
-// import Stories from './views/Stories'
-// import Data from './views/Data'
-// import Info from './views/Info'
+import { i18n } from './plugins/i18n'
 
 export const routes = [
   {
     path: '/',
-    name: 'Main',
+    name: 'main',
     component: Main
+  },
+  {
+    path: '/:lang',
+    name: 'locale',
+    component: Main,
+    beforeEnter (to, from, next) {
+      const locale = (![ 'en', 'es' ].includes(to.params.lang)) ? 'es' : to.params.lang
+      if (i18n.locale !== locale) {
+        import(`./translations/${locale}.json`).then(msgs => {
+          i18n.setLocaleMessage(locale, msgs)
+          i18n.locale = locale
+          return next()
+        })
+      } else return next()
+    }
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
-  // {
-  //   path: '',
-  //   // name: 'home',
-  //   components: {
-  //     default: DefaultContainer,
-  //     // 'header-top': Header
-  //   },
-  //   children: [
-  //     { path: '/', name: 'podcast', component: Podcast },
-  //     // { path: '/socorristas', name: 'podcast', component: Podcast },
-  //     { path: '/historias', name: 'stories', component: Stories },
-  //     { path: '/datos', name: 'data', component: Data },
-  //     { path: '/informacion', name: 'info', component: Info },
-  //     { path: '/dispositivo-socorrista', name: 'cards', component: Cards },
-  //     { path: '*', redirect: '/' },
-  //   ]
-  // }
 ]

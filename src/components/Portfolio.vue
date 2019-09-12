@@ -55,109 +55,109 @@ export default {
           title: 'Matanza Digital',
           url: '',
           gallery: [ 'matanza-digital-1.jpg', 'matanza-digital-2.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Andrés & Asociados',
           url: '',
           gallery: [ 'andres-y-asociados-1.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'El Tenedor Rosa',
           url: '',
           gallery: [ 'el-tenedor-rosa-1.jpg', 'el-tenedor-rosa-2.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'P2B Estudio',
           url: '',
           gallery: [ 'p2b-1.jpg', 'p2b-2.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Propuestas & Servicios para Casamientos',
           url: '',
           gallery: [ 'propuestas-1.jpg', 'propuestas-2.jpg', 'propuestas-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'A. Rinkel',
           url: '',
           gallery: [ 'arinkel-1.jpg', 'arinkel-2.jpg', 'arinkel-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Böron',
           url: '',
           gallery: [ 'boron-1.jpg', 'boron-2.jpg', 'boron-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Code of Life',
           url: '',
           gallery: [ 'code-of-life-1.jpg', 'code-of-life-2.jpg', 'code-of-life-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Estudio Recondo',
           url: '',
           gallery: [ 'recondo-1.jpg', 'recondo-2.jpg', 'recondo-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Interturis',
           url: '',
           gallery: [ 'interturis-1.jpg', 'interturis-2.jpg', 'interturis-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Crea tu súper Día del Niño',
           url: '',
           gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Equipamiento SIX',
           url: '',
           gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Satanizador',
           url: '',
           gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Transforma tu aventura',
           url: '',
           gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Animaciones OSDE',
           url: '',
           gallery: [ 'osde-1.jpg', 'osde-2.jpg', 'osde-3.jpg', 'osde-4.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Mumi',
           url: '',
           gallery: [ 'mumi-1.jpg', 'mumi-2.jpg', 'mumi-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Sun-Fi',
           url: '',
           gallery: [ 'sun-fi-1.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         },
         {
           title: 'Desplazamientos',
           url: '',
           gallery: [ 'desplazamientos-1.jpg', 'desplazamientos-2.jpg', 'desplazamientos-3.jpg' ],
-          tags: [ 'arte' ]
+          tags: [ 'art' ]
         }
       ]
     }
