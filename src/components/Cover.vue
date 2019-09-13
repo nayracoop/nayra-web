@@ -10,8 +10,8 @@
         <b-col cols="12">
           <div class="quick-contact">
             <dl>
-              <dt class="sr-only">{{ $t('Phone') }}</dt>
-              <dd> <font-awesome-icon icon="mobile-alt" /> {{ $t('cover.phone') }}</dd>
+              <!-- <dt class="sr-only">{{ $t('Phone') }}</dt>
+              <dd> <font-awesome-icon icon="mobile-alt" /> {{ $t('cover.phone') }}</dd> -->
               <dt class="sr-only">{{ $t('Address') }}</dt>
               <dd><font-awesome-icon icon="map-marker-alt" /> {{ $t ('companyShortAddress') }}</dd>
             </dl>

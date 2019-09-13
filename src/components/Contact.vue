@@ -44,8 +44,8 @@
                         <b-col cols="12" sm="12" md="6" lg="12" xl="12">
                             <div class="vcard">
                                 <dl>
-                                    <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">{{ $t('Phone') }}</span></dt>
-                                    <dd class="tel">{{ $t('vCard.phone') }}</dd>
+                                    <!-- <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">{{ $t('Phone') }}</span></dt>
+                                    <dd class="tel">{{ $t('vCard.phone') }}</dd> -->
                                     <dt><font-awesome-icon icon="map-marker-alt" /><span class="sr-only">{{ $t('Address') }}</span></dt>
                                     <dd class="adr">
                                         <span class="street-address">{{ $t('vCard.address') }}</span>, <span class="locality">{{ $t('vCard.locality') }}</span><span class="sr-only"> (<abbr title="Código postal">{{ $t('vCard.zipCodeLabel') }}</abbr>:<span class="postal-code">{{ $t('vCard.zipCode') }}</span>)</span>, <span class="region">{{ $t('vCard.region') }}</span>, <span class="country-name">{{ $t('vCard.country') }}</span>.

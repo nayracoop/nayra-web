@@ -14,7 +14,7 @@
       </b-row>
       <b-row class="portfolio">
         <template v-for="(item, index) in filteredPortfolio">
-          <b-col v-bind:key="index" xs="12" sm="12" md="6" lg="6" xl="4" v-if="index < page * pageLength">
+          <b-col v-bind:key="index" xs="12" sm="12" md="6" lg="6" xl="4" v-show="index < page * pageLength">
             <app-portfolio-card :gallery="item.gallery" :title="item.title" :projectURL="item.url" :sliderId="index" />
           </b-col>
         </template>
