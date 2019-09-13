@@ -40,7 +40,7 @@ h1.logo {
 }
 
 #nayra-svg {
-    fill: #222;
+    fill: #FFF;
 }
 
 header {
@@ -52,7 +52,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: #fff;
+    background-color: #000;
     transition: background 1s ease-in-out;
     max-height: 77px;
     box-shadow: 1px 0 11px rgba(0,0,0,.1);
@@ -63,7 +63,7 @@ header {
         margin: 0;
         font-size: 0.875em;
     }
-    
+
     .navbar {
         padding: 0;
     }
@@ -87,10 +87,10 @@ nav {
             font-weight: 700;
             /* text-transform: uppercase; */
             font-size: 0.875em;
-            color: #222 !important;
+            color: #FFF !important;
             transition: all 200ms ease-in-out;
 
-            &:focus { background-color: #fafafa; }
+            &:focus { background-color: rgb(44, 175, 106); }
             &:active { background-color: #ccc; }
         }
 
@@ -124,7 +124,7 @@ nav {
         border: 0;
         outline: none!important;
     }
-} 
+}
 
 .navbar-light .navbar-toggler+label {
     display: none;
@@ -179,8 +179,8 @@ section {
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
-    background: #666 url($img-path + 'ron.jpg') no-repeat center center;
-    background-size: cover;
+    background: #666 url($img-path + 'header.jpg') no-repeat center center;
+    background-size: 120%;
     background-blend-mode: multiply;
     overflow: hidden;
 
@@ -1293,7 +1293,7 @@ Extra large ≥1200px
     .works h3 {
         max-width: 12em;
     }
-    
+
     #main-menu {
         padding-right: 20px;
         .lang-selector {
