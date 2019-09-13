@@ -6,14 +6,14 @@ import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faSearchPlus, faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faSearchPlus, faArrowUp, faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faCheckSquare, faSquare } from '@fortawesome/free-regular-svg-icons'
 import { faInstagram, faFacebookSquare, faSpotify, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { i18n } from './plugins/i18n'
 import { routes } from './routes'
 
-library.add([faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faCheckSquare, faSquare, faSearchPlus, faArrowUp, faInstagram, faFacebookSquare, faSpotify, faTwitter, faLinkedin])
+library.add([faPlus, faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faCheckSquare, faSquare, faSearchPlus, faArrowUp, faInstagram, faFacebookSquare, faSpotify, faTwitter, faLinkedin])
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
