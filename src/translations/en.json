@@ -1,25 +1,25 @@
 {
   "cover": {
-    "content": "<strong><b>Cooperative</b> of digital development</strong>",
+    "content": "<strong>Digital development <b>Cooperative</b></strong>",
     "phone": "+54 9 11 5347 6740"
   },
   "about": {
     "title": "About us",
     "content": [
-      "We are a team of programmers and artists established as a work cooperative, dedicated to the development of quality, reliable and dynamic interactive systems.",
-      "Collaborative work and a form of horizontal and democratic organization enhance creative and professional processes, allowing us to obtain excellent results in each project.",
-      "We seek to profile ourselves as cultural actors in the digital field and contribute with our work and experience to the development of our community."
+      "We are a team of programmers and artists established as a worker's co-op, dedicated to the development of reliable and dynamic interactive systems.",
+      "Collaborative work and a horizontal and democratic organization enhance the creative and professional processes, allowing us to obtain excellent results in each project.",
+      "We seek to profile ourselves as cultural actors in the digital field and contribute to the development of our community with our work and experience."
     ]
   },
   "portfolio": {
     "title": "Our work",
-    "content": "Web developments, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
+    "content": "Web development, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
   },
   "contact": {
     "title": "Get in touch",
     "content": [
       "Any project in mind?",
-      "We are prepared to help you do it."
+      "We are ready to help you do it."
     ],
     "contentQR": "Discover the QR code and schedule us on your phone.",
     "srContactCard": "See contact card"
@@ -28,18 +28,18 @@
     "phone": "+54 9 11 5347 6740",
     "address": "Wenceslao de Tata 4561 2C",
     "locality": "Caseros",
-    "region": "Province of Buenos Aires",
+    "region": "Buenos Aires",
     "country": "Argentina",
     "zipCodeLabel": "CP",
     "zipCode": "B1678CSB",
     "urlName": "nayra.coop",
     "emailAddress": "info@nayra.coop"
   },
-  "companyShortAddress": "Caseros, Province of Buenos Aires",
-  "companyAddress": "Wenceslao de Tata 4561 2C, Caseros, Province of Buenos Aires",
+  "companyShortAddress": "Caseros, Buenos Aires",
+  "companyAddress": "Wenceslao de Tata 4561 2C, Caseros, Buenos Aires",
   "companyLegalName": "Cooperativa de trabajo Crear Arte y Tecnología LTDA",
   "CUIT": "30-71460053-9",
   "URL": "URL",
   "urlName": "nayra.coop",
   "FACTTIC": "Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"
-}
+  }
