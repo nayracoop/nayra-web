@@ -12,19 +12,19 @@ body {
 #wrapper {
     height: 100%;
 
-    &::after {
-        content: "";
-        box-sizing: border-box;
-        display: block;
-        position: fixed;
-        border: 13px solid #fff;
-        pointer-events: none;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 15;
-    }
+    // &::after {
+    //     content: "";
+    //     box-sizing: border-box;
+    //     display: block;
+    //     position: fixed;
+    //     border: 13px solid #fff;
+    //     pointer-events: none;
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     z-index: 15;
+    // }
 }
 
 .logo {
@@ -40,7 +40,7 @@ h1.logo {
 }
 
 #nayra-svg {
-    fill: #FFF;
+    fill: #fff;
 }
 
 header {
@@ -52,8 +52,8 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
-    background-color: #000;
-    transition: background 1s ease-in-out;
+    background-color: #010106;
+    transition: background 300ms ease-in-out;
     max-height: 77px;
     box-shadow: 1px 0 11px rgba(0,0,0,.1);
 
@@ -66,6 +66,23 @@ header {
 
     .navbar {
         padding: 0;
+    }
+
+    &.scrolled {
+        background-color: #fff;
+
+        #nayra-svg {
+            fill: #222;
+        }
+
+        nav li a,
+        nav li .dropdown-item {
+            color: #222 !important;
+        }
+
+        nav li.active a {
+            color: #fff !important;
+        }
     }
 }
 
@@ -82,16 +99,20 @@ nav {
         display: inline-block;
         margin: 0 10px;
 
-        a {
+        a, .dropdown-item {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
             /* text-transform: uppercase; */
             font-size: 0.875em;
-            color: #FFF !important;
+            color: #fff !important;
             transition: all 200ms ease-in-out;
 
             &:focus { background-color: rgb(44, 175, 106); }
             &:active { background-color: #ccc; }
+        }
+
+        .dropdown-item {
+            color: #222 !important;
         }
 
         &.active {
@@ -231,7 +252,7 @@ section {
     height: 100%;
     /*background: #999 url($img-path + 'ofi.jpg') no-repeat center center;*/
     background-size: cover;
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
     color: #fff;
 }
 
