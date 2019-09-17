@@ -202,9 +202,10 @@ section {
     width: 100%;
     // background: #666 url($img-path + 'header.jpg') no-repeat center center;
     background: #666 url($img-path + 'header.jpg') no-repeat center center fixed;
-    background-size: 120%;
+    // background-size: 120%;
     // background-blend-mode: multiply;
     overflow: hidden;
+    background-size: cover;
 
     .text-wrapper {
         position: absolute;
