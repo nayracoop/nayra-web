@@ -10,6 +10,7 @@
             <li><a target="_blank" href="https://twitter.com/nayracoop" title="Twitter"><font-awesome-icon :icon="['fab', 'twitter']" /><span class="sr-only">Twitter</span></a></li>
             <li><a target="_blank" href="https://open.spotify.com/user/nayracoop" title="Spotify"><font-awesome-icon :icon="['fab', 'spotify']" /><span class="sr-only">Spotify</span></a></li>
             <li><a target="_blank" href="https://www.linkedin.com/company/nayra" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin']" /><span class="sr-only">Linkedin</span></a></li>
+            <li><a target="_blank" href="https://github.com/nayracoop" title="Github"><font-awesome-icon :icon="['fab', 'github']" /><span class="sr-only">Github</span></a></li>
           </ul>
           <p>{{ $t('companyLegalName') }}<br />{{ $t('CUIT') }}</p>
           <img class="data" :src="require('@/assets/img/dataweb.jpg')" :alt="$t('Data Fiscal')" />
