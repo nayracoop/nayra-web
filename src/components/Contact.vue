@@ -87,16 +87,22 @@ export default {
   methods: {
     sendMessage () {
         if (!this.done) {
+            const formData = new FormData();
+
+            formData.append('name', this.contactName);
+            formData.append('surname', this.contactSurname);
+            formData.append('email', this.contactEmail);
+            formData.append('message', this.contactMessage);
             this.sending = true
-            this.$http.post('/send.php', {
-                name: this.contactName,
-                surname: this.contactSurname,
-                email: this.contactEmail,
-                message: this.contactMessage
-            }).then ((response) => {
+
+            this.$http.post('/send.php', formData).then ((response) => {
                 this.sending = false
-                this.done = true
-                this.output = "Mensaje enviado. ¡Muchas gracias!"
+                if (response.enviado) {
+                    this.done = true
+                    this.output = "Mensaje enviado. ¡Muchas gracias!"
+                } else {
+                    this.output = response.mensaje
+                }
             }).catch((e) => {
                 this.sending = false
                 this.output = "Ocurrió un error al intentar enviar su mensaje."
