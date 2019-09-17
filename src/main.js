@@ -2,6 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 import BootstrapVue from 'bootstrap-vue'
 import App from './App'
 
@@ -17,7 +19,7 @@ library.add([faPlus, faAddressCard, faMapMarkerAlt, faEnvelope, faMobileAlt, faC
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
-
+Vue.use(VueAxios, axios)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.config.productionTip = false
 

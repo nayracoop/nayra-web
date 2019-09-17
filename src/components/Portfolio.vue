@@ -170,7 +170,7 @@ export default {
       return Object.values(this.categories).reduce((current, item) => (current || item), false)
     },
     filteredPortfolio () {
-      if(!this.filtered) return [...this.portfolio]
+      if (!this.filtered) return [...this.portfolio]
       return this.portfolio.filter(item => {
         return item.tags.reduce((current, item) => (current || this.categories[item]), false)
       })

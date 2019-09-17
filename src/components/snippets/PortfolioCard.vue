@@ -30,14 +30,6 @@ export default {
     title: String,
     projectURL: String,
     sliderId: Number
-  },
-  data () {
-    return {
-      
-    }
-  },
-  methods: {
-
   }
 }
 </script>

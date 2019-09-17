@@ -200,9 +200,10 @@ section {
     padding-top: 0;
     padding-bottom: 0;
     width: 100%;
-    background: #666 url($img-path + 'header.jpg') no-repeat center center;
+    // background: #666 url($img-path + 'header.jpg') no-repeat center center;
+    background: #666 url($img-path + 'header.jpg') no-repeat center center fixed;
     background-size: 120%;
-    background-blend-mode: multiply;
+    // background-blend-mode: multiply;
     overflow: hidden;
 
     .text-wrapper {
@@ -252,7 +253,7 @@ section {
     height: 100%;
     /*background: #999 url($img-path + 'ofi.jpg') no-repeat center center;*/
     background-size: cover;
-    // background-blend-mode: multiply;
+    background-blend-mode: multiply;
     color: #fff;
 }
 
@@ -933,7 +934,7 @@ h2 {
     right: 4px;
     top: 4px;
     bottom: 4px;
-    background: #222 url($img-path + 'tata.jpg') no-repeat center center;
+    // background: #222 url($img-path + 'tata.jpg') no-repeat center center;
     background-size: cover;
     padding: 1.5em;
     z-index: 0;

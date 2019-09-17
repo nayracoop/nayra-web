@@ -36,7 +36,6 @@ export default {
   },
   methods: {
     handleScroll (e) {
-      let key = ''
       const scrollY = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0) + Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.6)
       this.scrolled = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0)) > Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.65
       for (const ref in this.$refs) {

@@ -7,27 +7,27 @@
                     <p>{{ $t('contact.content[0]') }} <br /> {{ $t('contact.content[1]') }}</p>
                 </b-col>
                 <b-col cols="12" sm="12" md="12" lg="8" xl="8">
-                    <b-form action="send.php" method="post" data-messages="#messages">
+                    <b-form action="send.php" :class="{ sending, done }" method="post" @submit.prevent="sendMessage">
                         <b-row>
                             <b-col cols="12" sm="12" md="6" lg="6" xl="6">
                                 <label class="sr-only" for="name">{{ $t('Name') }}</label>
-                                <input required type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" name="name" id="name" :placeholder="$t('Your name')">
+                                <input required type="text" class="form-control form-control-lg mb-2 mr-sm-2 mb-sm-0" v-model="contactName" name="name" id="name" :placeholder="$t('Your name')">
                             </b-col>
                             <b-col cols="12" sm="12" md="6" lg="6" xl="6">
                                 <label class="sr-only" for="surname">{{ $t('Surname') }}</label>
-                                <input required type="text" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="surname" id="surname" :placeholder="$t('Your surname')">
+                                <input required type="text" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" v-model="contactSurname" name="surname" id="surname" :placeholder="$t('Your surname')">
                             </b-col>
                             <b-col cols="12">
                                 <label class="sr-only" for="email">{{ $t('Email') }}</label>
-                                <input required type="email" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" name="email" id="email" :placeholder="$t('Your email')">
+                                <input required type="email" class="form-control form-control-lg  mb-2 mr-sm-2 mb-sm-0" v-model="contactEmail" name="email" id="email" :placeholder="$t('Your email')">
                             </b-col>
                             <b-col cols="12">
                                 <label class="sr-only" for="message">{{ $t('Message') }}</label>
-                                <textarea required class="form-control form-control-lg" name="message" id="message" rows="8" cols="80" :placeholder="$t('Your message')"></textarea>
+                                <textarea required class="form-control form-control-lg" v-model="contactMessage" name="message" id="message" rows="8" cols="80" :placeholder="$t('Your message')"></textarea>
                             </b-col>
                         </b-row>
                         <b-button type="submit" class="btn btn-primary btn-lg">{{ $t('Send') }}</b-button>
-                        <span id="messages"></span>
+                        <span id="messages">{{ $t(output) }}</span>
                     </b-form>
                 </b-col>
                 <b-col cols="12" sm="12" md="12" lg="4" xl="4">
@@ -75,9 +75,34 @@ export default {
   },
   data () {
     return {
+        contactName: '', 
+        contactSurname: '', 
+        contactEmail: '', 
+        contactMessage: '',
+        output: '',
+        sending: false,
+        done: false,
     }
   },
   methods: {
+    sendMessage () {
+        if (!this.done) {
+            this.sending = true
+            this.$http.post('/send.php', {
+                name: this.contactName,
+                surname: this.contactSurname,
+                email: this.contactEmail,
+                message: this.contactMessage
+            }).then ((response) => {
+                this.sending = false
+                this.done = true
+                this.output = "Mensaje enviado. ¡Muchas gracias!"
+            }).catch((e) => {
+                this.sending = false
+                this.output = "Ocurrió un error al intentar enviar su mensaje."
+            })
+        }
+    }
   }
 }
 </script>

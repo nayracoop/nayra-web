@@ -26,7 +26,7 @@
             <b-collapse is-nav id="main-menu">
               <b-navbar-nav class="ml-auto">
                 <b-nav-item :class="{ active: highlight === 'about' }" href="#nosotros">{{ $t('Our team') }}</b-nav-item>
-                <b-nav-item :class="{ active: highlight === 'works' }" href="#trabajos">{{  }} {{ $t('Works') }}</b-nav-item>
+                <b-nav-item :class="{ active: highlight === 'works' }" href="#trabajos">{{ $t('Works') }}</b-nav-item>
                 <b-nav-item :class="{ active: highlight === 'contact' }" href="#contacto">{{ $t('Contact') }}</b-nav-item>
                 <b-nav-item-dropdown class="lang-selector" :text="$i18n.locale" right>
                   <b-dropdown-item href="#" @click.prevent="setLocale(lang)" v-for="(lang, i) in langs" :key="`Lang${i}`" :class="{ 'sr-only': (lang === $i18n.locale) }" :value="lang">{{ lang }}</b-dropdown-item>
@@ -50,11 +50,11 @@ export default {
   },
   methods: {
     setLocale (lang) {
-      /*import(`../translations/${locale}.json`).then(msgs => {
+      /* import(`../translations/${locale}.json`).then(msgs => {
         this.$i18n.setLocaleMessage(locale, msgs)
         this.$i18n.locale = locale
-      })*/
-      if (lang == 'es') {
+      }) */
+      if (lang === 'es') {
         this.$router.push({ name: 'main' })
         this.$i18n.locale = lang
       }
