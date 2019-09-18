@@ -63,5 +63,8 @@
   "Address": "Dirección",
   "Art": "Arte",
   "Others": "Otros",
-  "Media": "Medios"
+  "Media": "Medios",
+  "Message sent. Thank you!": "Mensaje enviado. ¡Muchas gracias!",
+  "An error occurred while trying to send your message.": "Ocurrió un error al intentar enviar su mensaje.",
+  "Error sending message": "Error al enviar el mensaje"
 }

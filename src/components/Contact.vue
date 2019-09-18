@@ -163,16 +163,16 @@ export default {
           .then(response => {
             this.sending = false
             console.log(response)
-            if (response.enviado) {
+            if (response.data.enviado) {
               this.done = true
-              this.output = 'Mensaje enviado. ¡Muchas gracias!'
+              this.output = 'Message sent. Thank you!'
             } else {
-              this.output = response.mensaje
+              this.output = response.data.mensaje
             }
           })
           .catch(e => {
             this.sending = false
-            this.output = 'Ocurrió un error al intentar enviar su mensaje.'
+            this.output = 'An error occurred while trying to send your message.'
           })
       }
     }
