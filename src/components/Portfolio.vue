@@ -41,6 +41,40 @@ export default {
       categories: {},
       portfolio: [
         {
+          title: 'Betterez',
+          url: 'https://www.betterez.com/',
+          gallery: [ 'betterez-1.jpg' ],
+          tags: [ 'web' ]
+        },
+        {
+          title: 'Sororas',
+          url: 'https://www.sororas.com/',
+          gallery: [ 'sororas-1.jpg', 'sororas-2.jpg' ],
+          tags: [ 'web', 'media', 'art', 'apps' ]
+        },
+        {
+          title: 'La selección de la historia',
+          url: 'https://legacy.nayra.coop/tuhistory/laselecciondelahistoria/',
+          gallery: [ 'seleccion-1.jpg', 'seleccion-2.jpg' ],
+          tags: [ 'media', 'games' ]
+        },
+        {
+          title: 'Lucilas alfajores',
+          url: 'https://lucilas.com/',
+          gallery: [ 'lucilas-1.jpg', 'lucilas-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'AR Simulator',
+          gallery: [ 'ar-simulator.gif' ],
+          tags: [ 'vr/ar' ]
+        },
+        {
+          title: 'Planeta Oreo',
+          gallery: [ 'oreo.gif' ],
+          tags: [ 'games' ]
+        },
+        {
           title: 'AMG',
           url: 'https://www.amg.com.ar/',
           gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
@@ -66,13 +100,11 @@ export default {
         },
         {
           title: 'El Tenedor Rosa',
-          url: 'http://eltenedorrosa.com/',
           gallery: [ 'el-tenedor-rosa-1.jpg', 'el-tenedor-rosa-2.jpg' ],
           tags: [ 'web' ]
         },
         {
           title: 'P2B Estudio',
-          url: 'http://p2b-estudio.com/',
           gallery: [ 'p2b-1.jpg', 'p2b-2.jpg' ],
           tags: [ 'web' ]
         },
@@ -114,13 +146,13 @@ export default {
         },
         {
           title: 'Crea tu súper Día del Niño',
-          url: 'http://www.cartoonnetwork.com.ar/promo/dia-del-nino',
+          url: 'https://legacy.nayra.coop/creatusuperdiadelnino/',
           gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
-          tags: [ 'media' ]
+          tags: [ 'media', 'games' ]
         },
         {
           title: 'Equipamiento SIX',
-          url: 'http://equipamientosix.tuhistory.com/',
+          url: 'https://legacy.nayra.coop/equipamientosix/es',
           gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
           tags: [ 'media' ]
         },
@@ -128,13 +160,13 @@ export default {
           title: 'Satanizador',
           url: 'https://legacy.nayra.coop/canalaetv/satanizador/',
           gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
-          tags: [ 'media' ]
+          tags: [ 'media', 'games', 'apps' ]
         },
         {
           title: 'Transforma tu aventura',
           url: 'https://legacy.nayra.coop/transformatuaventura/',
           gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
-          tags: [ 'media' ]
+          tags: [ 'media', 'games' ]
         },
         {
           title: 'Animaciones OSDE',
