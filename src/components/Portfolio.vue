@@ -41,28 +41,10 @@ export default {
       categories: {},
       portfolio: [
         {
-          title: 'Betterez',
-          url: 'https://www.betterez.com/',
-          gallery: [ 'betterez-1.jpg' ],
-          tags: [ 'web' ]
-        },
-        {
           title: 'Sororas',
           url: 'https://www.sororas.com/',
           gallery: [ 'sororas-1.jpg', 'sororas-2.jpg' ],
           tags: [ 'web', 'media', 'art', 'apps' ]
-        },
-        {
-          title: 'La selección de la historia',
-          url: 'https://legacy.nayra.coop/tuhistory/laselecciondelahistoria/',
-          gallery: [ 'seleccion-1.jpg', 'seleccion-2.jpg' ],
-          tags: [ 'media', 'games' ]
-        },
-        {
-          title: 'Lucilas alfajores',
-          url: 'https://lucilas.com/',
-          gallery: [ 'lucilas-1.jpg', 'lucilas-2.jpg' ],
-          tags: [ 'e-commerce' ]
         },
         {
           title: 'AR Simulator',
@@ -70,21 +52,21 @@ export default {
           tags: [ 'vr/ar' ]
         },
         {
+          title: 'Betterez',
+          url: 'https://www.betterez.com/',
+          gallery: [ 'betterez-1.jpg' ],
+          tags: [ 'web' ]
+        },
+        {
           title: 'Planeta Oreo',
           gallery: [ 'oreo.gif' ],
           tags: [ 'games' ]
         },
         {
-          title: 'AMG',
-          url: 'https://www.amg.com.ar/',
-          gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
-          tags: [ 'web' ]
-        },
-        {
-          title: 'AMG Energía',
-          url: 'http://www.amgenergia.com.ar/',
-          gallery: [ 'amg-energia-1.jpg', 'amg-energia-2.jpg' ],
-          tags: [ 'web' ]
+          title: 'Desplazamientos',
+          url: 'http://desplazamientos.surwww.com/',
+          gallery: [ 'desplazamientos-1.jpg', 'desplazamientos-2.jpg', 'desplazamientos-3.jpg' ],
+          tags: [ 'art' ]
         },
         {
           title: 'Matanza Digital',
@@ -93,19 +75,88 @@ export default {
           tags: [ 'media' ]
         },
         {
-          title: 'Andrés & Asociados',
-          url: 'http://andresyasociados.com.ar/',
-          gallery: [ 'andres-y-asociados-1.jpg' ],
+          title: 'Crea tu súper Día del Niño',
+          url: 'https://legacy.nayra.coop/creatusuperdiadelnino/',
+          gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
+          tags: [ 'media', 'games' ]
+        },
+        {
+          title: 'Estudio Recondo',
+          url: 'http://estudiorecondo.com.ar/',
+          gallery: [ 'recondo-1.jpg', 'recondo-2.jpg', 'recondo-3.jpg' ],
           tags: [ 'web' ]
         },
         {
-          title: 'El Tenedor Rosa',
-          gallery: [ 'el-tenedor-rosa-1.jpg', 'el-tenedor-rosa-2.jpg' ],
+          title: 'Equipamiento SIX',
+          url: 'https://legacy.nayra.coop/equipamientosix/es/index.html',
+          gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
+          tags: [ 'media' ]
+        },
+        {
+          title: 'Transforma tu aventura',
+          url: 'https://legacy.nayra.coop/transformatuaventura/',
+          gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
+          tags: [ 'media', 'games' ]
+        },
+        {
+          title: 'Two piece mafia',
+          url: 'https://www.twopiecemafia.com/',
+          gallery: [ 'two-piece-1.jpg', 'two-piece-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'Satanizador',
+          url: 'https://legacy.nayra.coop/canalaetv/satanizador/',
+          gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
+          tags: [ 'media', 'games', 'apps' ]
+        },
+        {
+          title: 'Flowered & Co.',
+          url: 'https://www.flowered.us/',
+          gallery: [ 'flowered-1.jpg', 'flowered-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'AMG',
+          url: 'https://www.amg.com.ar/',
+          gallery: [ 'amg-1.jpg', 'amg-2.jpg', 'amg-3.jpg' ],
           tags: [ 'web' ]
         },
         {
-          title: 'P2B Estudio',
-          gallery: [ 'p2b-1.jpg', 'p2b-2.jpg' ],
+          title: 'Böron',
+          url: 'https://www.boron-tools.com/',
+          gallery: [ 'boron-1.jpg', 'boron-2.jpg', 'boron-3.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'Lucilas alfajores',
+          url: 'https://lucilas.com/',
+          gallery: [ 'lucilas-1.jpg', 'lucilas-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'AMG Energía',
+          url: 'http://www.amgenergia.com.ar/',
+          gallery: [ 'amg-energia-1.jpg', 'amg-energia-2.jpg' ],
+          tags: [ 'web' ]
+        },
+        {
+          title: 'La selección de la historia',
+          url: 'https://legacy.nayra.coop/tuhistory/laselecciondelahistoria/',
+          gallery: [ 'seleccion-1.jpg', 'seleccion-2.jpg' ],
+          tags: [ 'media', 'games' ]
+        }
+        // {
+        //   title: 'Sun-Fi',
+        //   url: '',
+        //   gallery: [ 'sun-fi-1.jpg' ],
+        //   tags: [ 'e-commerce' ]
+        // },
+        /*
+        {
+          title: 'Interturis',
+          url: 'https://www.interturis.com.ar/',
+          gallery: [ 'interturis-1.jpg', 'interturis-2.jpg', 'interturis-3.jpg' ],
           tags: [ 'web' ]
         },
         {
@@ -120,11 +171,11 @@ export default {
           gallery: [ 'arinkel-1.jpg', 'arinkel-2.jpg', 'arinkel-3.jpg' ],
           tags: [ 'e-commerce' ]
         },
-        {
-          title: 'Böron',
-          url: 'https://www.boron-tools.com/',
-          gallery: [ 'boron-1.jpg', 'boron-2.jpg', 'boron-3.jpg' ],
-          tags: [ 'e-commerce' ]
+         {
+          title: 'Andrés & Asociados',
+          url: 'http://andresyasociados.com.ar/',
+          gallery: [ 'andres-y-asociados-1.jpg' ],
+          tags: [ 'web' ]
         },
         {
           title: 'Code of Life',
@@ -133,40 +184,9 @@ export default {
           tags: [ 'web' ]
         },
         {
-          title: 'Estudio Recondo',
-          url: 'http://estudiorecondo.com.ar/',
-          gallery: [ 'recondo-1.jpg', 'recondo-2.jpg', 'recondo-3.jpg' ],
+          title: 'El Tenedor Rosa',
+          gallery: [ 'el-tenedor-rosa-1.jpg', 'el-tenedor-rosa-2.jpg' ],
           tags: [ 'web' ]
-        },
-        {
-          title: 'Interturis',
-          url: 'https://www.interturis.com.ar/',
-          gallery: [ 'interturis-1.jpg', 'interturis-2.jpg', 'interturis-3.jpg' ],
-          tags: [ 'web' ]
-        },
-        {
-          title: 'Crea tu súper Día del Niño',
-          url: 'https://legacy.nayra.coop/creatusuperdiadelnino/',
-          gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
-          tags: [ 'media', 'games' ]
-        },
-        {
-          title: 'Equipamiento SIX',
-          url: 'https://legacy.nayra.coop/equipamientosix/es',
-          gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
-          tags: [ 'media' ]
-        },
-        {
-          title: 'Satanizador',
-          url: 'https://legacy.nayra.coop/canalaetv/satanizador/',
-          gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
-          tags: [ 'media', 'games', 'apps' ]
-        },
-        {
-          title: 'Transforma tu aventura',
-          url: 'https://legacy.nayra.coop/transformatuaventura/',
-          gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
-          tags: [ 'media', 'games' ]
         },
         {
           title: 'Animaciones OSDE',
@@ -179,19 +199,12 @@ export default {
           url: 'https://www.mumidesign.com/',
           gallery: [ 'mumi-1.jpg', 'mumi-2.jpg', 'mumi-3.jpg' ],
           tags: [ 'e-commerce' ]
-        },
-        // {
-        //   title: 'Sun-Fi',
-        //   url: '',
-        //   gallery: [ 'sun-fi-1.jpg' ],
-        //   tags: [ 'e-commerce' ]
-        // },
-        {
-          title: 'Desplazamientos',
-          url: 'http://desplazamientos.surwww.com/',
-          gallery: [ 'desplazamientos-1.jpg', 'desplazamientos-2.jpg', 'desplazamientos-3.jpg' ],
-          tags: [ 'art' ]
         }
+        {
+          title: 'P2B Estudio',
+          gallery: [ 'p2b-1.jpg', 'p2b-2.jpg' ],
+          tags: [ 'web' ]
+        }, */
       ],
       page: 1,
       pageLength: 6
