@@ -5,7 +5,12 @@ export const routes = [
   {
     path: '/',
     name: 'main',
-    component: Main
+    component: Main,
+    beforeEnter (to, from, next) {
+      document.documentElement.setAttribute('lang', 'es')
+      document.title = `Nayra - ${i18n.t('Digital development Cooperative', 'es')}`
+      return next()
+    }
   },
   {
     path: '/:lang',
@@ -17,6 +22,8 @@ export const routes = [
         import(`./translations/${locale}.json`).then(msgs => {
           i18n.setLocaleMessage(locale, msgs)
           i18n.locale = locale
+          document.documentElement.setAttribute('lang', locale)
+          document.title = `Nayra - ${i18n.t('Digital development Cooperative', locale)}`
           return next()
         })
       } else return next()
