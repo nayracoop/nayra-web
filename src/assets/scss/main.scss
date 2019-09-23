@@ -1442,14 +1442,20 @@ Extra large ≥1200px
 }
 
 @media all and (max-width:575px) {
-    nav li a,
-    nav li .dropdown-item {
-        font-size: .925em;
-    }
-    .logo {
-        width: 125px;
-        margin-top: 6px;
-        //margin-left: 15px;
+    header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        nav li a,
+        nav li .dropdown-item {
+            font-size: .925em;
+        }
+        .logo {
+            //width: 125px;
+            //margin-top: 6px;
+            //margin-left: 15px;
+            width: 100px;
+            
+        }
     }
     section {
         padding-top: 4em;
@@ -1476,7 +1482,7 @@ Extra large ≥1200px
     }
     .impact .anim,
     .impact .text-wrapper {
-        left: 25%;
+        left: 20%;
         max-width: 70%;
     }
     .impact .text-wrapper {
@@ -1520,15 +1526,35 @@ Extra large ≥1200px
         max-width: 11.5em;
         font-size: 1.1em;
     }
-    .vcard dd {
-        font-size: .975em;
-    }
 
+    .vcard dl {
+        margin-top: 1em;
+        dd {
+            font-size: .975em;
+        }
+    }
+    .contact form {
+        margin-bottom: 1em;
+        .form-control {
+            font-size: 1.125rem;
+            font-weight: 300;   
+        }
+    }
     .contact .btn {
         font-size: 1.1em;
     }
     footer {
         padding-top: 4em;
         padding-bottom: 4em;
+        .social-networks li {
+            margin: 0 10px;
+            font-size: 1.25em;
+        }
+        p {
+            font-size: .925em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
 }

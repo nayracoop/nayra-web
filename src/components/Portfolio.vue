@@ -55,7 +55,7 @@ export default {
           title: 'Betterez',
           url: 'https://www.betterez.com/',
           gallery: [ 'betterez-1.jpg' ],
-          tags: [ 'web' ]
+          tags: [ 'software' ]
         },
         {
           title: 'Planeta Oreo',
