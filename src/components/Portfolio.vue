@@ -18,7 +18,7 @@
             <app-portfolio-card :gallery="item.gallery" :title="item.title" :projectURL="item.url" :sliderId="index" />
           </b-col>
         </template>
-        <b-col cols="12" align="center" v-if="page * pageLength < filteredPortfolio.length"><b-button @click="showMore"><font-awesome-icon :icon="['fas', 'plus']" /> Ver más</b-button></b-col>
+        <b-col cols="12" align="center" class="show-more" v-if="page * pageLength < filteredPortfolio.length"><b-button @click="showMore"><font-awesome-icon :icon="['fas', 'plus']" /> Ver más</b-button></b-col>
       </b-row>
     </b-container>
     <a href="#company-info" class="to-top nav-link">
