@@ -20,7 +20,11 @@ export default {
   },
   computed: {
     capitalizedName () {
-      return this.name.charAt(0).toUpperCase() + this.name.substr(1).toLowerCase()
+      if (this.name !== 'vr/ar') {
+        return this.name.charAt(0).toUpperCase() + this.name.substr(1).toLowerCase()
+      } else {
+        return this.name.toUpperCase()
+      }
     }
   }
 }

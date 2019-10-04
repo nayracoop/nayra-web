@@ -791,6 +791,9 @@ h2 {
     color: #fff;
 }
 
+.works .show-more .btn {    
+    padding: 12.5px 35px;
+}
 .works input:checked+label .fa-square,
 .works input:not(:checked)+label .fa-check-square {
     display: none;
@@ -1457,10 +1460,20 @@ Extra large ≥1200px
 }
 
 @media all and (max-width:575px) {
-    .logo {
-        width: 125px;
-        margin-top: 6px;
-        //margin-left: 15px;
+    header {
+        padding-top: .5em;
+        padding-bottom: .5em;
+        nav li a,
+        nav li .dropdown-item {
+            font-size: .925em;
+        }
+        .logo {
+            //width: 125px;
+            //margin-top: 6px;
+            //margin-left: 15px;
+            width: 100px;
+            
+        }
     }
     section {
         padding-top: 4em;
@@ -1482,19 +1495,22 @@ Extra large ≥1200px
     .about p,
     .works h2+p,
     .contact p {
-        font-size: 1em;
+        font-size: 1.125em;
         text-align: left;
     }
     .impact .anim,
     .impact .text-wrapper {
-        left: 25%;
-        max-width: 60%;
+        left: 20%;
+        max-width: 70%;
     }
     .impact .text-wrapper {
         margin-bottom: -3em;
     }
     .impact p:first-child {
-        font-size: 1.5em;
+        font-size: 1.725em;
+    }
+    .company-info dd {
+        font-size: .875em;
     }
     .works ul {
         margin-bottom: 2em;
@@ -1502,7 +1518,18 @@ Extra large ≥1200px
         text-align: left;
     }
     .works .btn {
-        font-size: 0.875em;
+        //font-size: 0.9625em;
+        font-size: 1.1em;
+        margin-right: 8px;
+        margin-top: 4px;
+        margin-bottom: 4px;
+
+    }
+    .works .show-more {
+        margin-top: 20px;
+        .btn {
+            padding: 12.5px 45px;
+        }
     }
     .works article {
         /* padding: 0 4px; */
@@ -1515,6 +1542,37 @@ Extra large ≥1200px
     }
     .works h3 {
         max-width: 11.5em;
-        font-size: .9em;
+        font-size: 1.1em;
+    }
+
+    .vcard dl {
+        margin-top: 1em;
+        dd {
+            font-size: .975em;
+        }
+    }
+    .contact form {
+        margin-bottom: 1em;
+        .form-control {
+            font-size: 1.125rem;
+            font-weight: 300;   
+        }
+    }
+    .contact .btn {
+        font-size: 1.1em;
+    }
+    footer {
+        padding-top: 4em;
+        padding-bottom: 4em;
+        .social-networks li {
+            margin: 0 10px;
+            font-size: 1.25em;
+        }
+        p {
+            font-size: .925em;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
     }
 }
