@@ -5,8 +5,8 @@
         <b-col cols="12">
           <b-navbar toggleable="md" class="bg-faded w-100">
             <b-navbar-brand href="#company-info" class="p-0">
-              <h1 class="logo">
-                <svg
+              <h1 class="logo">Nayra
+                <!-- <svg
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 203.2 47.59"
@@ -32,7 +32,7 @@
                     </g>
                   </g>
                 </svg>
-                <b class="sr-only">Nayra</b>
+                <b class="sr-only">Nayra</b> -->
               </h1>
             </b-navbar-brand>
             <b-navbar-toggle id="navbar-toggler" target="main-menu"></b-navbar-toggle>
@@ -53,9 +53,8 @@
                 >{{ $t('Contact') }}</b-nav-item>
                 <b-nav-item-dropdown class="lang-selector" :text="$i18n.locale" right>
                   <b-dropdown-item
-                    href="#"
-                    @click.prevent="setLocale(lang)"
                     v-for="(lang, i) in langs"
+                    :to="'/' + ((lang === 'es') ? '' : lang)"
                     :key="`Lang${i}`"
                     :class="{ 'sr-only': (lang === $i18n.locale) }"
                     :value="lang"
@@ -77,18 +76,6 @@ export default {
   },
   data () {
     return { langs: ['es', 'en'] }
-  },
-  methods: {
-    setLocale (lang) {
-      /* import(`../translations/${locale}.json`).then(msgs => {
-        this.$i18n.setLocaleMessage(locale, msgs)
-        this.$i18n.locale = locale
-      }) */
-      if (lang === 'es') {
-        this.$router.push({ name: 'main' })
-        this.$i18n.locale = lang
-      } else this.$router.push({ name: 'locale', params: { lang } })
-    }
   }
 }
 </script>

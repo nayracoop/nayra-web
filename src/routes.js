@@ -7,6 +7,7 @@ export const routes = [
     name: 'main',
     component: Main,
     beforeEnter (to, from, next) {
+      i18n.locale = 'es'
       document.documentElement.setAttribute('lang', 'es')
       document.title = `Nayra - ${i18n.t('Digital development Cooperative', 'es')}`
       return next()
