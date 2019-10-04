@@ -221,7 +221,7 @@ section {
     // background: #666 url($img-path + 'header.jpg') no-repeat center center;
     background: #666 url($img-path + 'header.jpg') no-repeat;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: 50% 50%;
     // background-size: 120%;
     // background-blend-mode: multiply;
     overflow: hidden;
@@ -272,6 +272,10 @@ section {
         margin-top: -15px;
         z-index: 2;
     }
+}
+
+.mobile .impact {
+    background-attachment: scroll;
 }
 
 .team {
