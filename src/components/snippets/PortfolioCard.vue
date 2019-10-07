@@ -19,7 +19,8 @@
       </b-carousel>
       <font-awesome-icon icon="search-plus" />
     </div>
-    <a :href="projectURL" target="_blank" rel="nofollow" class="info"><h3>{{ title }}</h3></a>
+    <a v-if="projectURL" :href="projectURL" target="_blank" rel="nofollow" class="info"><h3>{{ title }}</h3></a>
+    <div v-else class="info"><h3>{{ title }}</h3></div>
   </article>
 </template>
 

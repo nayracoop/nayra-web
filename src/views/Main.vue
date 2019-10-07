@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     handleScroll (e) {
-      const scrollY = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0) + Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.6)
+      const scrollY = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0) + Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.35)
       this.scrolled = Number((window.pageYOffset || document.scrollTop) - (document.clientTop || 0)) > Math.max(document.documentElement.clientHeight, window.innerHeight || 0) * 0.65
       for (const ref in this.$refs) {
         if (scrollY > this.$refs[ref].$el.offsetTop) {

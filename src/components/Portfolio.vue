@@ -14,11 +14,16 @@
       </b-row>
       <b-row class="portfolio">
         <template v-for="(item, index) in filteredPortfolio">
-          <b-col v-bind:key="index" xs="12" sm="12" md="6" lg="6" xl="4" v-show="index < page * pageLength">
+          <b-col v-bind:key="index" xs="12" sm="6" md="6" lg="6" xl="4" v-show="index < page * pageLength">
             <app-portfolio-card :gallery="item.gallery" :title="item.title" :projectURL="item.url" :sliderId="index" />
           </b-col>
         </template>
-        <b-col cols="12" align="center" class="show-more" v-if="page * pageLength < filteredPortfolio.length"><b-button @click="showMore"><font-awesome-icon :icon="['fas', 'plus']" /> Ver más</b-button></b-col>
+        <b-col cols="12" align="center" class="show-more" v-if="page * pageLength < filteredPortfolio.length">
+          <b-button @click="showMore">
+            <!-- <font-awesome-icon :icon="['fas', 'plus']" />  -->
+            Ver más
+          </b-button>
+        </b-col>
       </b-row>
     </b-container>
     <a href="#company-info" class="to-top nav-link">
@@ -53,7 +58,7 @@ export default {
         },
         {
           title: 'Betterez',
-          url: 'https://www.betterez.com/',
+          // url: 'https://www.betterez.com/',
           gallery: [ 'betterez-1.jpg' ],
           tags: [ 'software' ]
         },

@@ -74,7 +74,7 @@
         </b-col>
         <b-col cols="12" sm="12" md="12" lg="4" xl="4">
           <b-row>
-            <b-col cols="12" sm="12" md="6" lg="12" xl="12">
+            <!-- <b-col cols="12" sm="12" md="6" lg="12" xl="12">
               <div class="qr">
                 <div>
                   <b-button>
@@ -84,14 +84,14 @@
                 </div>
                 <p>{{ $t('contact.contentQR') }}</p>
               </div>
-            </b-col>
+            </b-col> -->
             <b-col cols="12" sm="12" md="6" lg="12" xl="12">
               <div class="vcard">
                 <dl>
                   <!-- <dt><font-awesome-icon icon="mobile-alt" /><span class="sr-only">{{ $t('Phone') }}</span></dt>
                   <dd class="tel">{{ $t('vCard.phone') }}</dd>-->
                   <dt>
-                    <font-awesome-icon icon="map-marker-alt" />
+                    <font-awesome-icon icon="map-signs" />
                     <span class="sr-only">{{ $t('Address') }}</span>
                   </dt>
                   <dd class="adr">
@@ -106,8 +106,7 @@
                     <span class="country-name">{{ $t('vCard.country') }}</span>.
                   </dd>
                   <dt>
-                    <i class="fas fa-envelope"></i>
-                    <font-awesome-icon icon="envelope" />
+                    <font-awesome-icon icon="at" />
                     <span class="sr-only">{{ $t('Email') }}</span>
                   </dt>
                   <dd>
