@@ -6,7 +6,7 @@ body {
     font: 300 100%/1.25 $body-font;
     background: #fff url($img-path + 'diagonal-lines-pattern.png');
     background-size: 50px auto;
-    color: #222;
+    color: $color-dark;
 }
 
 #wrapper {
@@ -81,16 +81,16 @@ header {
         background-color: #fff;
         
         h1.logo {
-            color: #222;
+            color: $color-dark;
         }
         
         #nayra-svg {
-            fill: #222;
+            fill: $color-dark;
         }
 
         nav li a,
         nav li .dropdown-item {
-            color: #222 !important;
+            color: $color-dark !important;
         }
 
         nav li.active a {
@@ -130,7 +130,7 @@ nav {
         }
 
         .dropdown-item {
-            color: #222 !important;
+            color: $color-dark !important;
         }
 
         &.active {
@@ -240,7 +240,7 @@ section {
 
     p {
         color: #fff;
-        text-shadow: 0 2px 4px #222;
+        text-shadow: 0 2px 4px $color-dark;
 
         &:first-child {
             font-size: 2.25em;
@@ -772,7 +772,7 @@ h2 {
 
 .works .btn {
     border: 0;
-    background: #222;
+    background: $color-dark;
     color: #fff;
     background: $color-yellow;
     /* background: $color-orange; */
@@ -809,7 +809,7 @@ h2 {
 }
 
 .works .more {
-    color: #222;
+    color: $color-dark;
     display: inline-block;
     margin: 0 auto;
     text-transform: lowercase;
@@ -962,7 +962,7 @@ h2 {
 
 .gm-style .gm-style-iw {
     position: static !important;
-    /* background: #222 url(http://media1.giphy.com/media/9EmYYw6o9cmsM/giphy.gif) no-repeat center center; */
+    /* background: $color-dark url(http://media1.giphy.com/media/9EmYYw6o9cmsM/giphy.gif) no-repeat center center; */
     /* background-size: cover; */
     padding: 120px 0 0;
     /* width: 130px !important; */
@@ -975,7 +975,7 @@ h2 {
     right: 4px;
     top: 4px;
     bottom: 4px;
-    // background: #222 url($img-path + 'tata.jpg') no-repeat center center;
+    // background: $color-dark url($img-path + 'tata.jpg') no-repeat center center;
     background-size: cover;
     padding: 1.5em;
     z-index: 0;
@@ -1023,7 +1023,7 @@ h2 {
 } */
 
 .vcard a {
-    color: #222;
+    color: $color-dark;
 }
 
 .vcard dd {
@@ -1033,7 +1033,7 @@ h2 {
     /* font-size: 1.125em; */
     /* padding-bottom: 0.25em; */
     margin-bottom: 1rem;
-    color: #222;
+    color: $color-dark;
     font-size: .875em;
 }
 
@@ -1459,7 +1459,7 @@ Extra large ≥1200px
         padding: 1.25em 20px;
     }
     header nav li a {
-        color: #222!important;
+        color: $color-dark!important;
     }
 }
 
