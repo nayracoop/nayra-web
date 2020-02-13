@@ -1,6 +1,6 @@
 # nayra-web
 
-> nayra.coop website
+:cyclone: nayra.coop website :cyclone:
 
 ## Build Setup
 
