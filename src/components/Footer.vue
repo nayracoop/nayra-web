@@ -5,10 +5,10 @@
         <b-col cols="12">
           <h2 class="sr-only">{{ $t('Follow us') }}</h2>
           <ul class="social-networks">
-            <!-- <li><a target="_blank" href="https://www.facebook.com/nayracoop/" title="Facebook"><font-awesome-icon :icon="['fab', 'facebook-square']" /><span class="sr-only">Facebook</span></a></li>
+             <li><a target="_blank" href="https://www.facebook.com/nayracoop/" title="Facebook"><font-awesome-icon :icon="['fab', 'facebook-square']" /><span class="sr-only">Facebook</span></a></li>
             <li><a target="_blank" href="https://www.instagram.com/nayracoop/" title="Instagram"><font-awesome-icon :icon="['fab', 'instagram']" /><span class="sr-only">Instagram</span></a></li>
             <li><a target="_blank" href="https://twitter.com/nayracoop" title="Twitter"><font-awesome-icon :icon="['fab', 'twitter']" /><span class="sr-only">Twitter</span></a></li>
-            <li><a target="_blank" href="https://open.spotify.com/user/nayracoop" title="Spotify"><font-awesome-icon :icon="['fab', 'spotify']" /><span class="sr-only">Spotify</span></a></li> -->
+<!--            <li><a target="_blank" href="https://open.spotify.com/user/nayracoop" title="Spotify"><font-awesome-icon :icon="['fab', 'spotify']" /><span class="sr-only">Spotify</span></a></li> -->
             <li><a target="_blank" href="https://www.linkedin.com/company/nayra" title="Linkedin"><font-awesome-icon :icon="['fab', 'linkedin']" /><span class="sr-only">Linkedin</span></a></li>
             <li><a target="_blank" href="https://github.com/nayracoop" title="Github"><font-awesome-icon :icon="['fab', 'github']" /><span class="sr-only">Github</span></a></li>
           </ul>

@@ -913,6 +913,10 @@ a.info:hover {
     /* text-align: center; */
 }
 
+.contact .email {
+    color: #04090d;
+    font-weight: 400;
+}
 .contact form {
     margin: 2em 0 8em;
     /*overflow: hidden;*/
@@ -972,36 +976,6 @@ a.info:hover {
     display: inline-block;
     border: 1px solid transparent;
     margin: 0;
-}
-
-.contact #map {
-    height: 430px;
-    background-color: #f0f0f0;
-    /* border-top:30px solid #f0f0f0;
-  border-bottom:30px solid #f0f0f0; */
-}
-
-.contact:hover #map {
-    /* filter: none; */
-}
-
-.contact #map g {
-    fill: $light-color;
-}
-
-.contact #map svg {
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-left: -50px;
-    margin-top: -10px;
-    z-index: 1;
-}
-
-.contact #map span {
-    display: block;
-    width: 180px;
 }
 
 .contact button.btn:hover,
@@ -1430,9 +1404,6 @@ Extra large ≥1200px
     }
     .contact .qr {
         margin: 0;
-    }
-    #map {
-        margin-top: 3em;
     }
     .works h3 {
         max-width: 12em;
