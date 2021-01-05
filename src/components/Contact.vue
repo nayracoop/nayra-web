@@ -61,7 +61,7 @@
             <b-button type="submit" class="btn btn-primary btn-lg">{{ $t('Send') }}</b-button>
             <span id="messages">{{ $t(output) }}</span>
           </b-form>
-        </b-col>        
+        </b-col>
       </b-row>
     </b-container>
   </section>

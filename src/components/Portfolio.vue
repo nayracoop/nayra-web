@@ -46,6 +46,12 @@ export default {
       categories: {},
       portfolio: [
         {
+          title: 'Archivo Rosa',
+          url: 'https://archivorosa.socorristasenred.org/',
+          gallery: [ 'archivorosa-1.jpg', 'archivorosa-2.jpg' ],
+          tags: [ 'web', 'media', 'art', 'apps' ]
+        },
+        {
           title: 'Sororas',
           url: 'https://www.sororas.com/',
           gallery: [ 'sororas-1.jpg', 'sororas-2.jpg' ],
@@ -81,9 +87,21 @@ export default {
         },
         {
           title: 'Crea tu súper Día del Niño',
-          url: 'https://legacy.nayra.coop/creatusuperdiadelnino/',
+          // url: 'https://legacy.nayra.coop/creatusuperdiadelnino/',
           gallery: [ 'dia-del-nino-1.jpg', 'dia-del-nino-2.jpg', 'dia-del-nino-3.jpg', 'dia-del-nino-4.jpg' ],
           tags: [ 'media', 'games' ]
+        },
+        {
+          title: 'ADC - Con mi cara no',
+          url: 'https://conmicarano.adc.org.ar/',
+          gallery: [ 'conmicarano-1.jpg', 'conmicarano-2.jpg' ],
+          tags: [ 'web', 'media' ]
+        },
+        {
+          title: 'ADC - Quiero mis datos',
+          url: 'https://quieromisdatos.adc.org.ar/',
+          gallery: [ 'quieromisdatos-1.jpg', 'quieromisdatos-2.jpg' ],
+          tags: [ 'web', 'media' ]
         },
         {
           title: 'Estudio Recondo',
@@ -93,25 +111,25 @@ export default {
         },
         {
           title: 'Equipamiento SIX',
-          url: 'https://legacy.nayra.coop/equipamientosix/es/index.html',
+          url: 'https://dev.nayra.coop/equipamientosix/es/',
           gallery: [ 'equipamiento-six-1.jpg', 'equipamiento-six-2.jpg', 'equipamiento-six-3.jpg', 'equipamiento-six-4.jpg' ],
           tags: [ 'media' ]
         },
         {
           title: 'Transforma tu aventura',
-          url: 'https://legacy.nayra.coop/transformatuaventura/',
+          // url: 'https://legacy.nayra.coop/transformatuaventura/',
           gallery: [ 'transforma-tu-aventura-1.jpg', 'transforma-tu-aventura-2.jpg', 'transforma-tu-aventura-3.jpg' ],
           tags: [ 'media', 'games' ]
         },
         {
           title: 'Two piece mafia',
-          url: 'https://www.twopiecemafia.com/',
+          // url: 'https://www.twopiecemafia.com/',
           gallery: [ 'two-piece-1.jpg', 'two-piece-2.jpg' ],
           tags: [ 'e-commerce' ]
         },
         {
           title: 'Satanizador',
-          url: 'https://legacy.nayra.coop/canalaetv/satanizador/',
+          // url: 'https://legacy.nayra.coop/canalaetv/satanizador/',
           gallery: [ 'satanizador-1.jpg', 'satanizador-2.jpg', 'satanizador-3.jpg', 'satanizador-4.jpg' ],
           tags: [ 'media', 'games', 'apps' ]
         },
@@ -140,6 +158,18 @@ export default {
           tags: [ 'e-commerce' ]
         },
         {
+          title: 'Campo Collection',
+          url: 'https://www.campocollection.com/',
+          gallery: [ 'campoco-1.jpg', 'campoco-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
+          title: 'Zleepers',
+          url: 'https://zzzleepers.myshopify.com/',
+          gallery: [ 'zleepers-1.jpg', 'zleepers-2.jpg' ],
+          tags: [ 'e-commerce' ]
+        },
+        {
           title: 'AMG Energía',
           url: 'http://www.amgenergia.com.ar/',
           gallery: [ 'amg-energia-1.jpg', 'amg-energia-2.jpg' ],
@@ -147,7 +177,7 @@ export default {
         },
         {
           title: 'La selección de la historia',
-          url: 'https://legacy.nayra.coop/tuhistory/laselecciondelahistoria/',
+          // url: 'https://legacy.nayra.coop/tuhistory/laselecciondelahistoria/',
           gallery: [ 'seleccion-1.jpg', 'seleccion-2.jpg' ],
           tags: [ 'media', 'games' ]
         }
