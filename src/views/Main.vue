@@ -3,6 +3,7 @@
     <app-header ref="header" :highlight="currentSection" :class="{ scrolled }"/>
     <app-cover ref="cover"/>
     <app-about ref="about"/>
+    <app-services ref="services"/>
     <app-portfolio ref="works"/>
     <app-contact ref="contact"/>
     <app-footer/>
@@ -13,6 +14,7 @@
 import AppHeader from '../components/Header'
 import AppCover from '../components/Cover'
 import AppAbout from '../components/About'
+import AppServices from '../components/Services'
 import AppPortfolio from '../components/Portfolio'
 import AppContact from '../components/Contact'
 import AppFooter from '../components/Footer'
@@ -22,6 +24,7 @@ export default {
     AppHeader,
     AppCover,
     AppAbout,
+    AppServices,
     AppPortfolio,
     AppContact,
     AppFooter

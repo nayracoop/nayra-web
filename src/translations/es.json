@@ -6,21 +6,84 @@
   "about": {
     "title": "Acerca de nosotros",
     "content": [
-      "Somos un equipo de programadores y artistas constituido como cooperativa de trabajo, dedicado al desarrollo de sistemas interactivos de calidad, confiables y dinámicos.",
-      "El trabajo colaborativo y una forma de organización horizontal y democrática potencian los procesos creativos y profesionales, permitiéndonos obtener resultados excelentes en cada proyecto.",
-      "Buscamos perfilarnos como actores culturales en el campo digital y contribuir con nuestro trabajo y experiencia al desarrollo de nuestra comunidad."
+      "Somos un equipo de programadores constituido como cooperativa de trabajo. Diseñamos y construimos software a medida: sistemas confiables, escalables y alineados a los objetivos de cada proyecto.",
+      "El trabajo colaborativo y una organización horizontal y democrática potencian los procesos técnicos y profesionales, permitiéndonos entregar resultados de calidad en cada etapa.",
+      "Acompañamos a equipos y organizaciones con desarrollos full-stack, backend, datos e inteligencia artificial, aportando nuestra experiencia al éxito de sus productos digitales."
+    ]
+  },
+  "services": {
+    "title": "Nuestros servicios",
+    "items": [
+      {
+        "title": "IA, Machine Learning, LLMs",
+        "content": [
+          "Diseñamos e integramos soluciones de inteligencia artificial, modelos de machine learning y LLMs en productos y procesos reales.",
+          "Desde exploración y prototipos hasta despliegue en producción, acompañamos a los equipos para que la IA aporte valor concreto al negocio."
+        ]
+      },
+      {
+        "title": "Arquitectura e Ingeniería de Datos",
+        "content": [
+          "Construimos e implementamos arquitecturas de datos sólidas: pipelines, integración, modelado y gobierno para que la información sea confiable y accionable.",
+          "Ayudamos a organizar, transformar y exponer datos para analítica, productos digitales y sistemas de decisión."
+        ]
+      },
+      {
+        "title": "Automatizaciones",
+        "content": [
+          "Automatizamos procesos operativos y técnicos para reducir trabajo manual, errores y tiempos de ciclo.",
+          "Integramos sistemas, orquestamos flujos y diseñamos automatizaciones a medida que escalan con el crecimiento de tu organización."
+        ]
+      },
+      {
+        "title": "Backend Development",
+        "content": [
+          "Desarrollamos APIs, servicios y plataformas backend robustas, seguras y preparadas para crecer.",
+          "Priorizamos calidad, mantenibilidad y performance para sostener productos digitales exigentes."
+        ]
+      },
+      {
+        "title": "Full-stack development",
+        "content": [
+          "Entregamos productos de punta a punta: interfaces, lógica de negocio e infraestructura trabajando como un solo sistema.",
+          "Equipos de programación a medida que acompañan el producto desde la idea hasta la evolución continua."
+        ]
+      }
+    ],
+    "models": [
+      {
+        "title": "Desarrollo de producto",
+        "content": [
+          "Nos encargamos de la construcción de tu producto de punta a punta: definimos el enfoque técnico y lo llevamos a producción con criterios claros de calidad.",
+          "Nos involucramos con el resultado, no solo con las tareas, para que el software evolucione junto con el negocio."
+        ]
+      },
+      {
+        "title": "Consultoría de software",
+        "content": [
+          "Analizamos tu contexto tecnológico para detectar cuellos de botella, riesgos y oportunidades de mejora. Te ayudamos a tomar decisiones de arquitectura, stack y proceso con criterio práctico.",
+          "También acompañamos a tus equipos con transferencia de conocimiento, para que las soluciones queden bien asentadas y sean sostenibles en el tiempo."
+        ]
+      },
+      {
+        "title": "Ampliación de equipo",
+        "content": [
+          "Sumamos programadores de la cooperativa a tu equipo actual, adaptándonos a tus dinámicas y herramientas para acelerar la entrega sin fricción.",
+          "Nos integramos al día a día del proyecto y compartimos responsabilidad sobre lo que se construye, acompañando el crecimiento del equipo con capacidad sostenida."
+        ]
+      }
     ]
   },
   "portfolio": {
     "title": "Nuestro trabajo",
-    "content": "Desarrollos web, web apps, juegos, desarrollos a medida, capacitaciones, e-commerce, animaciones, asesoramiento, proyectos propios, exposiciones, talleres."
+    "content": "Proyectos destacados en los que construimos software, productos digitales y experiencias a medida junto a nuestros clientes."
   },
   "contact": {
     "title": "Contactanos",
     "content": [
-      "¿Algún proyecto en mente?",
-      "Estamos preparados para ayudarte a realizarlo.",
-      "Completá el formulario o envianos un email a "
+      "¿Tenés un producto o un desafío técnico en mente?",
+      "Estamos listos para ayudarte a desarrollarlo.",
+      "Completá el formulario o escribinos a "
     ],
     "contentQR": "Descubrí el código QR y agendanos en tu teléfono.",
     "srContactCard": "Ver tarjeta de contacto"
@@ -54,6 +117,7 @@
   "Surname": "Apellido",
   "Message": "Mensaje",
   "Our team": "Nosotros",
+  "Services": "Servicios",
   "Works": "Trabajos",
   "Contact": "Contacto",
   "Open menu": "Abrir menú",
@@ -66,6 +130,9 @@
   "Others": "Otros",
   "Media": "Medios",
   "Games": "Juegos",
+  "Software": "Full Stack",
+  "Ingenieria de datos": "Ingeniería de Datos",
+  "Data science - ia": "Data Science - IA",
   "Message sent. Thank you!": "Mensaje enviado. ¡Muchas gracias!",
   "An error occurred while trying to send your message.": "Ocurrió un error al intentar enviar su mensaje.",
   "Error sending message": "Error al enviar el mensaje",

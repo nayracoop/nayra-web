@@ -14,7 +14,16 @@
           </ul>
           <p>{{ $t('companyLegalName') }}<br />{{ $t('CUIT') }}</p>
           <img class="data" :src="require('@/assets/img/dataweb.jpg')" :alt="$t('Data Fiscal')" />
-          <p><span>{{ $t('We are part of') }}</span> <abbr :title="$t('FACTTIC')"></abbr><a href="http://www.facttic.org.ar/"><img :src="require('@/assets/img/facttic.svg')" alt="FACTTIC" width="150" height="42" /></a></p>
+          <p>
+            <span>{{ $t('We are part of') }}</span>
+            <abbr :title="$t('FACTTIC')"></abbr>
+            <a href="http://www.facttic.org.ar/">
+              <img :src="require('@/assets/img/facttic.svg')" alt="FACTTIC" width="150" height="42" />
+            </a>
+            <a href="https://patio.coop/" target="_blank" rel="noopener noreferrer">
+              <img class="patio-logo" :src="require('@/assets/img/patio.png')" alt="Patio" width="120" height="60" />
+            </a>
+          </p>
         </b-col>
       </b-row>
     </b-container>

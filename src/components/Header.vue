@@ -18,6 +18,10 @@
                   href="#nosotros"
                 >{{ $t('Our team') }}</b-nav-item>
                 <b-nav-item
+                  :class="{ active: highlight === 'services' }"
+                  href="#servicios"
+                >{{ $t('Services') }}</b-nav-item>
+                <b-nav-item
                   :class="{ active: highlight === 'works' }"
                   href="#trabajos"
                 >{{ $t('Works') }}</b-nav-item>

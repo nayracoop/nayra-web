@@ -12,7 +12,7 @@
             {{ $t('contact.content[2]') }} <a class="email" href="mailto:info@nayra.coop">{{ $t('vCard.emailAddress') }}</a>
           </p>
         </b-col>
-        <b-col cols="12" sm="12" md="12" lg="10" xl="10">
+        <b-col cols="12" sm="12" md="12" lg="10" xl="10" class="mx-auto">
           <b-form
             action="send.php"
             :class="{ sending, done }"

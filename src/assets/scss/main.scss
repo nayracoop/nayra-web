@@ -640,6 +640,132 @@ h2 {
     }
 }
 
+.services {
+    padding-top: 8em;
+    padding-bottom: 6em;
+    background-image: url($img-path + 'grid-pattern.png');
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.services > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.services > .doodle {
+    left: 0;
+    right: auto;
+    width: calc(50vw - 570px);
+    max-width: 160px;
+    min-width: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.services > .doodle .tile {
+    // Keep crosses within the left gutter strip
+    left: 35% !important;
+}
+
+.services > .doodle .tile div,
+.services > .doodle .tile.color-1 div,
+.services > .doodle .tile.color-2 div,
+.services > .doodle .tile.color-3 div,
+.services > .doodle .tile.color-4 div,
+.services > .doodle .tile.color-5 div,
+.services > .doodle .tile.color-6 div,
+.services > .doodle .tile.color-7 div {
+    background-color: $primary-color;
+    border-color: $primary-color;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.services .services-grid {
+    margin-top: 1em;
+}
+
+.services .service-card {
+    margin-bottom: 2.5em;
+    border: $border-light;
+    transition: all 200ms ease-in-out;
+    height: calc(100% - 2.5em);
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+}
+
+.services .service-card-body {
+    padding: 1.5em 1.25em 1.75em;
+    display: block;
+    color: inherit;
+    flex: 1;
+}
+
+.services .service-card h3 {
+    font-family: $heading-font;
+    letter-spacing: 0.01em;
+    font-size: 1.35em;
+    font-weight: 500;
+    margin: 0 0 0.85em;
+    line-height: 1.25;
+    color: $secondary-color;
+}
+
+.services .service-card p {
+    font-size: 0.95em;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 0.85em;
+    opacity: 0.92;
+}
+
+.services .service-card p:last-child {
+    margin-bottom: 0;
+}
+
+.services .engagement-models {
+    margin-top: 2em;
+    padding-top: 3em;
+}
+
+.services .engagement-model {
+    margin-bottom: 3em;
+    max-width: none;
+}
+
+.services .engagement-model:last-child {
+    margin-bottom: 0;
+}
+
+.services .engagement-model h3 {
+    font-family: $heading-font;
+    font-size: 1.75em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+    margin-bottom: 0.75em;
+    color: $primary-color;
+}
+
+.services .engagement-model p {
+    font-size: 1.05em;
+    line-height: 1.55;
+    font-weight: 400;
+    margin-bottom: 0.85em;
+    opacity: 0.92;
+}
+
+.services .engagement-model p:last-child {
+    margin-bottom: 0;
+}
+
 .works {
     padding-top: 8em;
     padding-bottom: 6em;
@@ -905,12 +1031,12 @@ a.info:hover {
 }
 
 .contact h2 {
-    /* text-align: center; */
+    text-align: center;
 }
 
 .contact p {
     font-size: 1.125em;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .contact .email {
@@ -918,9 +1044,10 @@ a.info:hover {
     font-weight: 400;
 }
 .contact form {
-    margin: 2em 0 8em;
+    margin: 2em auto 8em;
     /*overflow: hidden;*/
     overflow: visible;
+    max-width: 100%;
 }
 
 .contact .form-control {
@@ -958,7 +1085,10 @@ a.info:hover {
     border-radius: 0;
     border: $border-dark !important;
     color: $dark-color;
-    float: right;
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1rem;
     padding: .75rem 6rem;
 }
@@ -973,9 +1103,10 @@ a.info:hover {
     font-size: 1.25rem;
     padding: .5rem 1rem;
     line-height: 1.5;
-    display: inline-block;
+    display: block;
+    text-align: center;
     border: 1px solid transparent;
-    margin: 0;
+    margin: 0.75em 0 0;
 }
 
 .contact button.btn:hover,
@@ -1236,6 +1367,14 @@ footer p {
 
 footer p span {
     display: block;
+}
+
+footer .patio-logo {
+    max-height: 42px;
+    width: auto;
+    height: auto;
+    margin-left: 1em;
+    vertical-align: middle;
 }
 
 footer .data {
@@ -1534,6 +1673,30 @@ Extra large ≥1200px
         padding-top: 4em;
         padding-bottom: 4em;
     }
+    .services {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .services h2 {
+        text-align: left;
+    }
+    .services .service-card {
+        margin-bottom: 1.5em;
+        height: auto;
+    }
+    .services .service-card h3 {
+        font-size: 1.2em;
+    }
+    .services .engagement-models {
+        padding-top: 2em;
+        margin-top: 1em;
+    }
+    .services .engagement-model {
+        margin-bottom: 2.25em;
+    }
+    .services .engagement-model h3 {
+        font-size: 1.4em;
+    }
     h2 {
         font-size: 1.875em;
     }
@@ -1544,7 +1707,7 @@ Extra large ≥1200px
     .works h2+p,
     .contact p {
         font-size: 1.125em;
-        text-align: left;
+        text-align: center;
     }
     .impact .anim,
     .impact .text-wrapper {

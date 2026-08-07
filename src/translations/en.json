@@ -6,23 +6,86 @@
   "about": {
     "title": "About us",
     "content": [
-      "We are a team of programmers and artists established as a worker's co-op, dedicated to the development of reliable and dynamic interactive systems.",
-      "Collaborative work and a horizontal and democratic organization enhance the creative and professional processes, allowing us to obtain excellent results in each project.",
-      "We seek to profile ourselves as cultural actors in the digital field and contribute to the development of our community with our work and experience."
+      "We are a team of programmers established as a worker co-op. We design and build custom software: reliable, scalable systems aligned with each project's goals.",
+      "Collaborative work and a horizontal, democratic organization strengthen our technical and professional process, so we can deliver quality results at every stage.",
+      "We support teams and organizations with full-stack, backend, data and AI development, putting our experience behind the success of their digital products."
+    ]
+  },
+  "services": {
+    "title": "Our services",
+    "items": [
+      {
+        "title": "AI, Machine Learning, LLMs",
+        "content": [
+          "We design and integrate artificial intelligence, machine learning models and LLMs into real products and processes.",
+          "From exploration and prototypes to production rollout, we help teams turn AI into concrete business value."
+        ]
+      },
+      {
+        "title": "Data Architecture & Engineering",
+        "content": [
+          "We build and implement solid data architectures: pipelines, integration, modeling and governance so information is reliable and actionable.",
+          "We help organize, transform and expose data for analytics, digital products and decision systems."
+        ]
+      },
+      {
+        "title": "Automations",
+        "content": [
+          "We automate operational and technical processes to cut manual work, errors and cycle times.",
+          "We integrate systems, orchestrate flows and design custom automations that scale with your organization."
+        ]
+      },
+      {
+        "title": "Backend Development",
+        "content": [
+          "We build robust, secure and growth-ready APIs, services and backend platforms.",
+          "We prioritize quality, maintainability and performance to support demanding digital products."
+        ]
+      },
+      {
+        "title": "Full-stack development",
+        "content": [
+          "We deliver end-to-end products: interfaces, business logic and infrastructure working as one system.",
+          "Custom engineering teams that take the product from idea through continuous evolution."
+        ]
+      }
+    ],
+    "models": [
+      {
+        "title": "Product development",
+        "content": [
+          "We take care of building your product end to end: defining the technical approach and shipping to production with clear quality standards.",
+          "We get involved with the outcome, not just the tasks, so the software evolves alongside the business."
+        ]
+      },
+      {
+        "title": "Software consultancy",
+        "content": [
+          "We look at your technology landscape to spot bottlenecks, risks and opportunities. We help you make practical decisions about architecture, stack and process.",
+          "We also support your teams with knowledge transfer, so improvements stick and remain sustainable over time."
+        ]
+      },
+      {
+        "title": "Team augmentation",
+        "content": [
+          "We embed cooperative programmers into your existing team, matching your tools and ways of working to speed delivery without adding friction.",
+          "We join the day-to-day of the project and share ownership of what gets built, supporting the team with sustained capacity as it grows."
+        ]
+      }
     ]
   },
   "portfolio": {
     "title": "Our work",
-    "content": "Web development, web apps, games, custom developments, training, e-commerce, animations, advice, own projects, exhibitions, workshops."
+    "content": "Selected projects where we built software, digital products and custom experiences with our clients."
   },
   "contact": {
     "title": "Get in touch",
     "content": [
-      "Any project in mind?",
-      "We are ready to help you do it.",
-      "Fill in the contact form or send us an email at "
+      "Got a product or a technical challenge in mind?",
+      "We are ready to help you build it.",
+      "Fill in the contact form or email us at "
     ],
-    "contentQR": "Discover the QR code and schedule us on your phone.",
+    "contentQR": "Discover the QR code and save us on your phone.",
     "srContactCard": "See contact card"
   },
   "vCard": {
@@ -42,5 +105,12 @@
   "CUIT": "30-71460053-9",
   "URL": "URL",
   "urlName": "nayra.coop",
-  "FACTTIC": "Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento"
-  }
+  "FACTTIC": "Federación Argentina de Cooperativas de Trabajo de Tecnología Innovación y Conocimiento",
+  "Services": "Services",
+  "Our team": "Our team",
+  "Works": "Works",
+  "Contact": "Contact",
+  "Software": "Full Stack",
+  "Ingenieria de datos": "Data Engineering",
+  "Data science - ia": "Data Science - IA"
+}

@@ -262,7 +262,11 @@ export default {
     }
   },
   mounted () {
-    this.categories = [...(new Set(this.portfolio.map(item => item.tags.join('|')).join('|').split('|')))].reduce((current, item) => {
+    const preferred = ['ingenieria de datos', 'data science - ia']
+    const fromProjects = [...(new Set(this.portfolio.map(item => item.tags.join('|')).join('|').split('|')))]
+      .filter(tag => tag && tag !== 'art' && tag !== 'e-commerce' && !preferred.includes(tag))
+    const ordered = [...preferred, ...fromProjects]
+    this.categories = ordered.reduce((current, item) => {
       current[item] = false
       return current
     }, {})
