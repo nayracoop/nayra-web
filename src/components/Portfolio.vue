@@ -15,7 +15,15 @@
       <b-row class="portfolio">
         <template v-for="(item, index) in filteredPortfolio">
           <b-col v-bind:key="index" xs="12" sm="6" md="6" lg="6" xl="4" v-show="index < page * pageLength">
-            <app-portfolio-card :gallery="item.gallery" :title="item.title" :projectURL="item.url" :sliderId="index" />
+            <app-portfolio-card
+              :gallery="item.gallery"
+              :title="item.title"
+              :projectURL="item.url"
+              :sliderId="index"
+              :role="item.role"
+              :description="item.description"
+              :technologies="item.technologies"
+            />
           </b-col>
         </template>
         <b-col cols="12" align="center" class="show-more" v-if="page * pageLength < filteredPortfolio.length">
@@ -46,6 +54,42 @@ export default {
       categories: {},
       portfolio: [
         {
+          title: 'Betterez',
+          // url: 'https://www.betterez.com/',
+          gallery: [ 'betterez-1.jpg' ],
+          tags: [ 'software' ]
+        },
+        {
+          title: 'Universidad de San Andrés',
+          gallery: [ 'udesa-1.jpg' ],
+          role: 'Data Engineer / Data Architect',
+          description: [
+            'Implementación de un data hub universitario para agilizar el reporting y optimizar la gestión de datos.'
+          ],
+          technologies: [ 'Apache Airflow', 'Airbyte', 'PostgreSQL' ],
+          tags: [ 'ingenieria de datos' ]
+        },
+        {
+          title: 'The Mad Fox',
+          gallery: [ 'madfox-1.jpg' ],
+          role: 'Data Scientist / Machine Learning Engineer',
+          description: [
+            'Chatbot y agente con OpenAI para asistir estudiantes y revisar lecciones, con respuestas personalizadas y sugerencias de corrección según nivel de riesgo.'
+          ],
+          technologies: [ 'OpenAI API', 'Regex', 'JSON' ],
+          tags: [ 'data science - ia' ]
+        },
+        {
+          title: 'The Maker Group',
+          gallery: [ 'makergroup-1.jpg' ],
+          role: 'Data Scientist',
+          description: [
+            'Consultoría y capacitación en negociación: soluciones a medida para potenciar equipos y mejorar la rentabilidad.'
+          ],
+          technologies: [ 'Power BI', 'Azure Data Factory', 'Snowflake', 'CPG', 'Walmart Luminate', 'Nielsen' ],
+          tags: [ 'data science - ia' ]
+        },
+        {
           title: 'Archivo Rosa',
           url: 'https://archivorosa.socorristasenred.org/',
           gallery: [ 'archivorosa-1.jpg', 'archivorosa-2.jpg' ],
@@ -61,12 +105,6 @@ export default {
           title: 'AR Simulator',
           gallery: [ 'ar-simulator.gif' ],
           tags: [ 'vr/ar' ]
-        },
-        {
-          title: 'Betterez',
-          // url: 'https://www.betterez.com/',
-          gallery: [ 'betterez-1.jpg' ],
-          tags: [ 'software' ]
         },
         {
           title: 'Planeta Oreo',

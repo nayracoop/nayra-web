@@ -788,6 +788,75 @@ h2 {
     opacity: 1;
 }
 
+.works article.has-overlay {
+    position: relative;
+}
+
+.works .project-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    padding: 1.1em 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(4, 9, 13, 0.92) 0%, rgba(4, 9, 13, 0.72) 55%, rgba(4, 9, 13, 0.2) 100%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+}
+
+.works article.has-overlay:hover .project-overlay {
+    opacity: 1;
+}
+
+.works article.has-overlay:hover .carousel svg,
+.works article.has-overlay:hover .carousel::after {
+    opacity: 0;
+}
+
+.works .project-overlay .project-role,
+.works .project-overlay .project-description,
+.works .project-overlay .project-tech {
+    display: block !important;
+    color: $light-color;
+    margin-bottom: 0.55em;
+}
+
+.works .project-overlay .project-role {
+    font-family: $heading-font;
+    font-size: 0.85em;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: $secondary-color;
+}
+
+.works .project-overlay .project-description {
+    font-size: 0.8em;
+    line-height: 1.4;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+.works .project-overlay .project-tech {
+    margin-bottom: 0;
+    font-size: 0.72em;
+    line-height: 1.35;
+    opacity: 0.9;
+}
+
+.works .project-overlay .project-tech span {
+    display: block;
+    font-family: $heading-font;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: $primary-color;
+    margin-bottom: 0.15em;
+}
+
 .works .portfolio {
     transition: opacity 400ms ease-in-out, filter 300ms ease-in-out;
     transition-delay: 100ms;
@@ -1369,12 +1438,20 @@ footer p span {
     display: block;
 }
 
+footer .facttic-logo,
 footer .patio-logo {
-    max-height: 42px;
     width: auto;
     height: auto;
-    margin-left: 1em;
     vertical-align: middle;
+}
+
+footer .facttic-logo {
+    max-height: 42px;
+}
+
+footer .patio-logo {
+    max-height: 42px;
+    margin-left: 3.5em;
 }
 
 footer .data {
@@ -1395,6 +1472,8 @@ footer img {
   border-top-right-radius: 3px; */
     overflow: hidden;
     background: #eaeaea;
+    position: relative;
+    aspect-ratio: 540 / 304;
     /* border:5px solid $light-color; */
     /* border-bottom: 0; */
 }
@@ -1452,6 +1531,19 @@ footer img {
   height: 100%;
   width:auto;
 } */
+
+.carousel .carousel-inner,
+.carousel .carousel-item {
+    height: 100%;
+}
+
+.carousel .carousel-item img,
+.carousel .img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
 
 @keyframes coop {
     0% {
