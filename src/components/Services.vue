@@ -22,6 +22,13 @@
               <p v-for="(paragraph, pIndex) in item.content" :key="pIndex">
                 {{ paragraph }}
               </p>
+              <a
+                v-if="item.url"
+                :href="item.url"
+                class="service-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >{{ $t('Learn more') }}</a>
             </div>
           </article>
         </b-col>

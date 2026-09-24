@@ -21,7 +21,7 @@
               :projectURL="item.url"
               :sliderId="index"
               :role="item.role"
-              :description="item.description"
+              :description="projectDescription(item)"
               :technologies="item.technologies"
             />
           </b-col>
@@ -52,6 +52,7 @@ export default {
   data () {
     return {
       categories: {},
+      otherTags: ['web', 'media', 'apps', 'vr/ar', 'games', 'art', 'e-commerce', 'others'],
       portfolio: [
         {
           title: 'Betterez',
@@ -63,9 +64,7 @@ export default {
           title: 'Universidad de San Andrés',
           gallery: [ 'udesa-1.jpg' ],
           role: 'Data Engineer / Data Architect',
-          description: [
-            'Implementación de un data hub universitario para agilizar el reporting y optimizar la gestión de datos.'
-          ],
+          projectKey: 'udesa',
           technologies: [ 'Apache Airflow', 'Airbyte', 'PostgreSQL' ],
           tags: [ 'ingenieria de datos' ]
         },
@@ -73,9 +72,7 @@ export default {
           title: 'The Mad Fox',
           gallery: [ 'madfox-1.jpg' ],
           role: 'Data Scientist / Machine Learning Engineer',
-          description: [
-            'Chatbot y agente con OpenAI para asistir estudiantes y revisar lecciones, con respuestas personalizadas y sugerencias de corrección según nivel de riesgo.'
-          ],
+          projectKey: 'madfox',
           technologies: [ 'OpenAI API', 'Regex', 'JSON' ],
           tags: [ 'data science - ia' ]
         },
@@ -83,9 +80,7 @@ export default {
           title: 'The Maker Group',
           gallery: [ 'makergroup-1.jpg' ],
           role: 'Data Scientist',
-          description: [
-            'Consultoría y capacitación en negociación: soluciones a medida para potenciar equipos y mejorar la rentabilidad.'
-          ],
+          projectKey: 'makergroup',
           technologies: [ 'Power BI', 'Azure Data Factory', 'Snowflake', 'CPG', 'Walmart Luminate', 'Nielsen' ],
           tags: [ 'data science - ia' ]
         },
@@ -290,20 +285,28 @@ export default {
     filteredPortfolio () {
       if (!this.filtered) return [...this.portfolio]
       return this.portfolio.filter(item => {
-        return item.tags.reduce((current, item) => (current || this.categories[item]), false)
+        return item.tags.some(tag => {
+          if (this.categories[tag]) return true
+          if (this.categories.others && this.otherTags.includes(tag)) return true
+          return false
+        })
       })
     }
   },
   methods: {
     showMore () {
       this.page++
+    },
+    projectDescription (item) {
+      if (!item.projectKey) return item.description || []
+      const locale = this.$i18n.locale
+      const pack = this.$i18n.messages[locale] || this.$i18n.messages.es
+      const project = (((pack.portfolio || {}).projects || {})[item.projectKey]) || {}
+      return project.description || []
     }
   },
   mounted () {
-    const preferred = ['ingenieria de datos', 'data science - ia']
-    const fromProjects = [...(new Set(this.portfolio.map(item => item.tags.join('|')).join('|').split('|')))]
-      .filter(tag => tag && tag !== 'art' && tag !== 'e-commerce' && !preferred.includes(tag))
-    const ordered = [...preferred, ...fromProjects]
+    const ordered = ['software', 'ingenieria de datos', 'data science - ia', 'others']
     this.categories = ordered.reduce((current, item) => {
       current[item] = false
       return current

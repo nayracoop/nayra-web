@@ -48,6 +48,14 @@
           "Entregamos productos de punta a punta: interfaces, lógica de negocio e infraestructura trabajando como un solo sistema.",
           "Equipos de programación a medida que acompañan el producto desde la idea hasta la evolución continua."
         ]
+      },
+      {
+        "title": "GenIA",
+        "url": "https://genia.coop/",
+        "content": [
+          "Implementamos estrategias de inteligencia artificial autoalojada con tecnología open source: vos elegís los modelos y adaptamos la arquitectura a tus necesidades.",
+          "Sin dependencia de proveedores, sin filtraciones de datos y con infraestructura 100% bajo tu control. Sin suscripciones por usuario ni costos por token."
+        ]
       }
     ],
     "models": [
@@ -76,7 +84,24 @@
   },
   "portfolio": {
     "title": "Nuestro trabajo",
-    "content": "Proyectos destacados en los que construimos software, productos digitales y experiencias a medida junto a nuestros clientes."
+    "content": "Proyectos destacados en los que construimos software, productos digitales y experiencias a medida junto a nuestros clientes.",
+    "projects": {
+      "udesa": {
+        "description": [
+          "Implementación de un data hub universitario para agilizar el reporting y optimizar la gestión de datos."
+        ]
+      },
+      "madfox": {
+        "description": [
+          "Chatbot y agente con OpenAI para asistir estudiantes y revisar lecciones, con respuestas personalizadas y sugerencias de corrección según nivel de riesgo."
+        ]
+      },
+      "makergroup": {
+        "description": [
+          "Consultoría y capacitación en negociación: soluciones a medida para potenciar equipos y mejorar la rentabilidad."
+        ]
+      }
+    }
   },
   "contact": {
     "title": "Contactanos",
@@ -101,7 +126,7 @@
   },
   "companyShortAddress": "Caseros, Provincia de Buenos Aires",
   "companyAddress": "Perdiguero 2074, Caseros, Provincia de Buenos Aires",
-  "companyLegalName": "Cooperativa de trabajo Crear Arte y Tecnología LTDA",
+  "companyLegalName": "COOPERATIVA DE TRABAJO NAYRA LIMITADA",
   "CUIT": "30-71460053-9",
   "Data fiscal": "Data fiscal",
   "URL": "URL",
@@ -134,6 +159,7 @@
   "Ingenieria de datos": "Ingeniería de Datos",
   "Data science - ia": "Data Science - IA",
   "Technologies used": "Tecnologías:",
+  "Learn more": "Conocé más",
   "Message sent. Thank you!": "Mensaje enviado. ¡Muchas gracias!",
   "An error occurred while trying to send your message.": "Ocurrió un error al intentar enviar su mensaje.",
   "Error sending message": "Error al enviar el mensaje",
